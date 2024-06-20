@@ -1,0 +1,656 @@
+.black-boy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 5%;
+  background-color: black;
+  padding: 20px; 
+  text-align: center; 
+}
+
+.first {
+  max-width: 80%; 
+  display: block;
+  margin: 0 auto;
+}
+
+.hear {
+  color: white;
+  font-size: 2rem; 
+  margin-top: 10px; 
+}
+
+button {
+  margin-top: 10px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+p {
+  width: 80%;
+  margin: 10px auto; 
+  font-size: 16px; 
+}
+
+#SHOP {
+  margin-top: 20px; 
+  margin-right: 0; 
+}
+
+.features {
+  background-color: rgba(1, 58, 47, 0.954);
+  margin-top: 5%;
+  padding: 20px; 
+}
+
+#material{
+  color: white !important;
+}
+
+h3 {
+  color: white;
+  text-align: center; 
+  font-size: 40px; 
+  margin-top: 20px; 
+}
+
+.video {
+  margin: 20px auto; 
+  height: 200px; 
+  margin-left: 35%;
+}
+
+span {
+  color: rgba(255, 255, 255, 0.488);
+  margin-top: 10px;
+  display: block; 
+}
+
+
+.cycle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+h5 {
+  color: rgb(9, 94, 128);
+  text-align: center; 
+  font-size: 50px; 
+  margin-top: 20px; 
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: none;
+}
+
+textarea {
+  height: 150px;
+}
+
+#bbt{
+  width: 20%;
+  
+}
+
+
+#bbt:hover{
+  background-color: darkcyan;
+  color: white;
+}
+.sub {
+  background-color: darkcyan;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  margin-top: -2%;
+  margin-right: 5%;
+}
+
+button {
+  background-color: darkcyan;
+  color: white;
+  margin-top: 10px;
+}
+
+#track {
+  font-size: 30px;
+  margin-top: 20px; 
+  text-align: center; 
+  margin-left: 50%;
+}
+
+h6 {
+  text-align: center; 
+  font-size: 20px;
+  margin-top: 20px; 
+}
+
+
+.title {
+  width: 80%; 
+  font-size: 16px; 
+  margin: 20px auto; 
+}
+
+.phone {
+  text-align: center; 
+  font-size: 14px; 
+  margin-top: 20px; 
+}
+
+#primary{
+  margin-left: 45%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .black-boy {
+    width: 200%;
+    padding: 10px;
+  }
+
+  .first {
+    max-width: 100%;
+  }
+
+  .hear {
+    font-size: 1.5rem;
+    margin-top: 5px; 
+  }
+
+  .product {
+   
+    margin-top: 20px;
+    margin-left: 30% !important; 
+    width: 40%;
+  }
+
+  p {
+    width: 300%;
+    margin-right: 30% ;
+    font-size: 24px;
+    
+  }
+
+ 
+
+  .video {
+    
+   height: 200%;
+   margin-left: 30% !important;
+  }
+
+  .features {
+    width: 200%;
+    padding: 10px; 
+    margin-top: 20px; 
+  }
+
+  h3 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  h5 {
+    font-size: 40px;
+    margin-left: 90%; 
+    margin-top: 20px;
+  }
+
+  .cycle {
+    margin-left: 0% !important; 
+  }
+
+  #track {
+    margin-left: 100%;
+    margin-top: 20px; 
+  }
+
+  #material{
+    color: white;
+  }
+
+  h6 {
+    margin-left:50%;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+   margin-left: 50%;
+    font-size: 16px;
+    text-align: center; 
+  }
+
+  .phone {
+   
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 50% !important;
+    width: 100%;
+  }
+
+  #primary {
+    margin-left: 90%;
+    margin-top: 20px; 
+    width: 20%;
+  }
+
+ 
+  form {
+    margin-left: 100%;
+    margin-top: 20px; 
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .black-boy {
+    width: 200%;
+    padding: 10px;
+  }
+
+  .first {
+    max-width: 100%;
+  }
+
+  .hear {
+    font-size: 1.5rem;
+    margin-top: 5px; 
+  }
+
+  .product {
+   
+    margin-top: 20px;
+    margin-left: 90%; 
+  }
+
+  p {
+    width: 300%;
+    margin-right: 30% ;
+    font-size: 24px;
+    
+  }
+
+ 
+
+  .video {
+    
+   height: 200%;
+   margin-left: 30% !important;
+  }
+
+  .features {
+    width: 200%;
+    padding: 10px; 
+    margin-top: 20px; 
+  }
+
+  h3 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  h5 {
+    font-size: 40px;
+    margin-left: 90%; 
+    margin-top: 20px;
+  }
+
+  .cycle {
+    margin-left: 0% !important; 
+  }
+
+  #track {
+    margin-left: 100%;
+    margin-top: 20px; 
+  }
+
+  #material{
+    color: white;
+  }
+
+  h6 {
+    margin-left:50%;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+   margin-left: 50%;
+    font-size: 16px;
+    text-align: center; 
+  }
+
+  .phone {
+   
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 50% !important;
+    width: 100%;
+  }
+
+  #primary {
+    margin-left: 90%;
+    margin-top: 20px; 
+    width: 20%;
+  }
+
+ 
+  form {
+    margin-left: 60%;
+    margin-top: 20px; 
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .black-boy {
+    width: 200%;
+    padding: 10px;
+  }
+
+  .first {
+    max-width: 100%;
+  }
+
+  .hear {
+    font-size: 1.5rem;
+    margin-top: 5px; 
+  }
+
+  .product {
+   
+    margin-top: 20px;
+    margin-left: 90%; 
+  }
+
+  p {
+    width: 300%;
+    margin-right: 30% ;
+    font-size: 24px;
+    
+  }
+
+ 
+
+  .video {
+    
+   height: 200%;
+   margin-left: 20% !important;
+  }
+
+  .features {
+    width: 200%;
+    padding: 10px; 
+    margin-top: 20px; 
+  }
+
+  h3 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  h5 {
+    font-size: 40px;
+    margin-left: 90%; 
+    margin-top: 20px;
+  }
+
+  .cycle {
+    margin-left: 0% !important; 
+  }
+
+  #track {
+    margin-left: 100%;
+    margin-top: 20px; 
+  }
+
+  #material{
+    color: white;
+  }
+
+  h6 {
+    margin-left:50%;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+   margin-left: 50%;
+    font-size: 16px;
+    text-align: center; 
+  }
+
+  .phone {
+   
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 50% !important;
+    width: 100%;
+  }
+
+  #primary {
+    margin-left: 90%;
+    margin-top: 20px; 
+    width: 20%;
+  }
+
+  form {
+    margin-left: 60%;
+    margin-top: 20px; 
+    width: 100%;
+  }
+
+  #primary{
+
+    width: 30%;
+   
+   }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .video {
+    margin-left: 5%;
+  }
+
+  #primary{
+
+    width: 30%;
+   
+   }
+}
+
+
+@media screen and (max-width: 439px) {
+
+  .video {
+    
+    height: 200%;
+    margin-left: 15% !important;
+   }
+
+   #primary{
+
+    width: 30%;
+   
+   }
+
+}
+
+
+@media screen and (max-width: 394px) {
+
+  .video {
+    
+    height: 200%;
+    margin-left: 10% !important;
+   }
+
+   #primary{
+
+    width: 30%;
+   
+   }
+
+}
+
+@media screen and (max-width: 700px) {
+  .video {
+    margin-left: 25%;
+  }
+
+  #primary{
+
+    width: 30%;
+   
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .video {
+    margin-left: 20%;
+  }
+
+  #primary{
+
+    width: 30%;
+   
+   }
+}
+
+@media screen and (max-width: 450px) {
+  .video {
+    margin-left: 10%;
+  }
+
+  #primary{
+
+    width: 30%;
+   
+   }
+}
+
+@media screen and (max-width: 952px) {
+  .video {
+    margin-left: 15%;
+  }
+
+  .cycle {
+    margin-left: 10%;
+  }
+
+  #primary{
+
+    width: 30%;
+   
+   }
+}
+
+@media screen and (max-width: 370px) {
+
+  .video {
+    
+    height: 200%;
+    margin-left: 5% !important;
+   }
+
+   #primary{
+
+    width: 40% !important;
+   margin-left: 80%;
+   }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .video {
+    
+    height: 200%;
+    margin-left: 5% !important;
+   }
+
+   #primary{
+
+    width: 30%;
+   
+   }
+}
+
+@media screen and (max-width: 360px) {
+
+  .video {
+    
+    height: 200%;
+    margin-left: 5% !important;
+   }
+
+   #primary{
+
+    width: 50%;
+   margin-left: 80%;
+   }
+
+   form{
+    margin-left: 60%;
+   }
+}
+@media screen and (max-width: 375px) {
+
+  .video {
+    
+    height: 200%;
+    margin-left: 5% !important;
+   }
+
+   #primary{
+
+    width: 30%;
+   
+   }
+}

@@ -1,0 +1,19 @@
+<h4 class="our"><div class="pro">Our<br></div>Products</h4>
+
+<main>
+
+    <div *ngFor="let Product of Products">
+    
+        
+        <div class="card" style="width: 18rem;">
+            <a routerLink="/details/{{Product.title}}"><img [src]="Product.images" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">{{Product.title}}</h5>
+              <p class="card-text">{{Product.price}}</p>
+            </div>
+          </div>
+    
+    </div>
+    
+    
+    </main>

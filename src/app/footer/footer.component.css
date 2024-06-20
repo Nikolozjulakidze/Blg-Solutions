@@ -1,0 +1,25 @@
+footer {
+    margin-top: 15%;
+    background-color: black !important;
+    color: white;
+  }
+  
+  a {
+    color: whitesmoke !important;
+  }
+  
+  #cpy {
+    margin-right: 50% !important;
+  }
+  
+  .fa-facebook, .fa-youtube {
+    margin-left: 10px; 
+    color: #fff; 
+  }
+  
+  @media screen and (max-width: 800px) {
+    footer{
+      width: 200%;
+    }
+
+  }

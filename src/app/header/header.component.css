@@ -1,0 +1,88 @@
+.navbar {
+    background-color: black !important;
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar a {
+    color: rgba(0, 204, 255, 0.815) !important;
+}
+
+.navbar ul {
+    margin-left: 40%;
+    font-size: 15px;
+}
+
+.navbar #name {
+    color: rgba(0, 204, 255, 0.815) !important;
+    margin-left: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.navbar #log {
+    margin-right: 40% !important;
+    width: 100% !important;
+    font-size: 10px;
+}
+
+.navbar #cart {
+    font-size: 20px !important;
+    margin: -5px;
+    margin-left: 5px;
+}
+
+.navbar button {
+    background: black;
+}
+
+.navbar .active {
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    color: red !important;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar ul {
+        margin-right: 3% !important;
+        text-align: right; 
+        padding: 0; 
+    }
+
+    .navbar #name {
+        margin-left: 0;
+        text-align: center; 
+    }
+
+    .navbar #log {
+        display: none; 
+    }
+
+    .navbar #cart {
+        margin-left: 0; 
+    }
+
+    .navbar-toggler{
+       background-color: red !important;
+    }
+}
+
+@media screen and (max-width: 395px) {
+
+    .video {
+      
+      height: 200%;
+      margin-left: 5% !important;
+     }
+  
+     #primary{
+  
+      width: 30%;
+     
+     }
+  }

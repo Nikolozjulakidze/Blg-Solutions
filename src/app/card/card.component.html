@@ -1,0 +1,39 @@
+  <div class="container">
+  <h1>HOME / GALLERY / {{title}}</h1>
+</div>
+
+<main>
+  <div class="cont">
+   
+    <div class="image">
+      <div class="zoom-container">  
+      <img [src]="imageUrl" alt="...">
+    </div>
+    </div>
+
+    <div class="product">
+      <h3>{{title}}</h3>
+      <p>SKU: 0001</p>
+      <p>{{price | currency}}</p>
+      <p>Quantity</p>
+      <div class="quantity-box">
+        <input type="number" class="quantity-input" value="1">
+      </div>
+      <div class="buy"> 
+        <button id="credit" type="button" class="btn btn-primary">Add to Card</button>
+        <button id="now" type="button" class="btn btn-dark">Buy now</button>
+        <span class="ship">Shipping</span>
+        <span class="policy">I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.</span>
+        <hr>
+        <span>Returns</span>
+        <span class="policy">I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.</span>
+        <div class="links">
+          <a class="whatsapp" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fwww.wix.com%2Fdemone2%2Fheadphones%2Fproduct-page%2Fi-m-a-product-3"><i class="fa-brands fa-whatsapp"></i></a>
+          <a class="facebook" href="https://www.facebook.com/?locale=ka_GE"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="twitter" href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+          <a class="pinterest" href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,11 @@
+<section class="cards-container">
+  <a *ngFor="let item of hotelData.products" [routerLink]="['/card']" [queryParams]="{ title: item.title, price: item.price.current, imageUrl: item.images[1] }" queryParamsHandling="merge">
+    <div class="card">
+      <img [src]="item.images[1]" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text">{{ item.price.current | currency }}</p>
+      </div>
+    </div>
+  </a>
+</section>

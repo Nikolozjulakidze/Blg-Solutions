@@ -1,0 +1,184 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    height: 350px; 
+    margin-top: 50px; 
+    position: static; 
+    margin-left: 20%; 
+}
+
+h1 {
+    font-size: 16px;
+    margin-top: 20%;
+}
+
+img {
+    height: 60%;
+    width: 130%;
+    cursor: zoom-in;
+    position: static;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20%;
+}
+
+.cont{
+    display: flex;
+    position: static;
+}
+
+h3{
+    margin-left: 15%;
+    margin-top: 2%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    margin-left: 18%;
+    margin-top: 5%;
+
+}
+
+.product{
+    margin-left: 18%;
+    width: 100%;
+}
+
+.quantity-input {
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    margin-left: 18%;
+}
+
+.buy{
+    margin-left: 18%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#credit{
+    width: 50%;
+}
+
+#now{
+    width: 50%;
+    margin-top: 20px;
+}
+
+.zoom-container img {
+    transition: transform 0.3s ease;
+    position: static;
+} 
+  
+.zoom-container:hover img {
+    transform: scale(1.5);
+    position: static;
+}
+
+.ship{
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.policy{
+    width: 70%;
+    font-size: 12px;
+    margin-top: 5%;
+}
+
+hr{
+    width: 70%;
+}
+
+.descr{
+    font-size: 15px;
+}
+
+.links{
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.whatsapp{
+    color: green;
+    margin: 10px;
+}
+
+.facebook{
+    color: blue;
+    margin: 10px;
+}
+
+.twitter{
+    color: skyblue;
+    margin: 10px;
+}
+
+.pinterest{
+    color: red;
+    margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50%;
+        font-size: 50px;
+    }
+
+    .image {
+        margin-left: 0;
+        height: 10%;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    img {
+        width: 200%;
+        height: auto;
+        margin-left: -50% !important;
+    }
+
+    .cont {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 70%;
+    }
+
+    h3, p, .product, .quantity-input, .buy, .ship, .policy, hr, .descr, .links {
+        margin-left: 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #credit, #now {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+    h3{
+        margin-top: 100%;
+    }
+
+    .policy{
+        margin-left: -50%;
+        width: 200%;
+    }
+}
