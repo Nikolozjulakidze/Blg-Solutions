@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { ProductsComponent } from './products/products.component';
-import { AboutComponent } from './about/about.component';
-import { ForumComponent } from './forum/forum.component';
-import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
-import { GalleryComponent } from './gallery/gallery.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CardComponent } from './card/card.component';
+import { HydroisolationComponent } from './hydroisolation/hydroisolation.component';
+import { SelfFloorComponent } from './self-floor/self-floor.component';
+import { GruntiComponent } from './grunti/grunti.component';
+import { TvitsworebadiComponent } from './tvitsworebadi/tvitsworebadi.component';
+import { HidroizolaciaComponent } from './hidroizolacia/hidroizolacia.component';
+import { MasalebiComponent } from './masalebi/masalebi.component';
+import { ContactComponent } from './contact/contact.component';
+import { PhitxiComponent } from './phitxi/phitxi.component';
 
 
 @NgModule({
@@ -22,12 +24,14 @@ import { CardComponent } from './card/card.component';
  HeaderComponent,
  FooterComponent,
  HomePageComponent,
- ProductsComponent,
- AboutComponent,
- ForumComponent,
- DetailsComponent,
- GalleryComponent,
- CardComponent,
+ HydroisolationComponent,
+ SelfFloorComponent,
+ GruntiComponent,
+ TvitsworebadiComponent,
+ HidroizolaciaComponent,
+ MasalebiComponent,
+ ContactComponent,
+ PhitxiComponent,
   ],
   imports: [
     BrowserModule,

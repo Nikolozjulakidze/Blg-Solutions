@@ -1,5 +1,4 @@
 footer {
-    margin-top: 15%;
     background-color: black !important;
     color: white;
   }
@@ -19,7 +18,20 @@ footer {
   
   @media screen and (max-width: 800px) {
     footer{
-      width: 200%;
+      width: 210%;
     }
 
+  }
+
+    
+  @media screen and (max-width: 449px) {
+    footer{
+      width: 230%;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    footer{
+      width: 250%;
+    }
   }

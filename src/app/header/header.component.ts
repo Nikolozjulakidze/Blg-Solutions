@@ -9,4 +9,22 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 
+  isDropdownOpen = false;
+  isMasalebiDropdownOpen = false;
+  
+  toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+    this.isMasalebiDropdownOpen = false;
+  }
+  
+  toggleMasalebiDropdown(event: Event) {
+    event.stopPropagation();
+    this.isMasalebiDropdownOpen = !this.isMasalebiDropdownOpen;
+  }
+  
+  closeDropdown() {
+    this.isDropdownOpen = false;
+    this.isMasalebiDropdownOpen = false;
+  }
+  
 }

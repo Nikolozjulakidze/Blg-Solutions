@@ -1,5 +1,5 @@
 .navbar {
-    background-color: black !important;
+    background-color: white !important;
     height: 120px;
     position: fixed;
     width: 100%;
@@ -8,7 +8,7 @@
 }
 
 .navbar a {
-    color: rgba(0, 204, 255, 0.815) !important;
+    color: black !important;
 }
 
 .navbar ul {
@@ -17,17 +17,18 @@
 }
 
 .navbar #name {
-    color: rgba(0, 204, 255, 0.815) !important;
+    color: black !important;
     margin-left: 10%;
-    font-family: 'Courier New', Courier, monospace;
+ font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
 }
 
-.navbar #log {
-    margin-right: 40% !important;
-    width: 100% !important;
-    font-size: 10px;
+.navbar-logo {
+    height: 120px !important; 
+    object-fit: contain;
 }
+
+
 
 .navbar #cart {
     font-size: 20px !important;
@@ -35,17 +36,72 @@
     margin-left: 5px;
 }
 
+
+
 .navbar button {
     background: black;
+
 }
 
-.navbar .active {
-    color: white !important;
+
+.navbar a:hover {
+    color: darkred !important; /* White color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+
 
 .navbar-toggler-icon {
     color: red !important;
 }
+
+.nav-item {
+    position: relative;
+  }
+  
+  .custom-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 1000;
+    min-width: 150px;
+  }
+
+
+  
+  .custom-dropdown li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .custom-dropdown li a:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  
+  .service{
+    cursor: pointer;
+  }
+
+  .nav-link i.fab.fa-facebook {
+  font-size: 25px; /* Adjust size if needed */
+  color: #4267B2;   /* Facebook blue */
+}
+
+
 
 @media screen and (max-width: 991px) {
     .navbar ul {
@@ -59,12 +115,21 @@
         text-align: center; 
     }
 
+    .navbar-logo{
+        height: 80px !important; 
+        margin-left: 0; 
+    }
+
     .navbar #log {
         display: none; 
     }
 
     .navbar #cart {
         margin-left: 0; 
+    }
+
+    .navbar a {
+        color: red !important;
     }
 
     .navbar-toggler{

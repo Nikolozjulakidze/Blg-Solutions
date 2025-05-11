@@ -1,0 +1,128 @@
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+    margin-top: 20%;
+  }
+
+  
+  h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 10%;
+    margin-left: 40%;
+ }
+
+  .card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+
+
+  .card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .card .info {
+    padding: 20px;
+  }
+
+  .card .info h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .card .info p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .learn-more-btn {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 10px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 800px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 85%;
+  }
+
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+  @media (max-width: 500px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 75%;
+  }
+
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+  @media (max-width: 449px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 80%;
+  }
+
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+  @media (max-width: 420px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 85%;
+  }
+
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+}

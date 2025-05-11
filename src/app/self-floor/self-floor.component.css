@@ -1,0 +1,209 @@
+section{
+    margin-top: 8% !important;
+}
+
+/* Main Section */
+.flooring-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px; /* Increased from 1000px */
+    margin: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+}
+
+/* Image Containers now take full width */
+.image-container,
+.extra-image-container {
+    flex: 1 1 100%;
+    min-width: 100%;
+}
+
+.main-image,
+.extra-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Text Content Styles */
+.text-content {
+    flex: 1 1 100%;
+    min-width: 100%;
+    color: #555;
+    padding: 10px 0;
+}
+
+.heading {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.benefits-list {
+    color: #444;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+/* Additional Text */
+.additional-text {
+    flex: 1 1 100%;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+}
+
+.call-to-action {
+    font-size: 17px;
+    color: #555;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
+  .flooring-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+     margin-left: 47%;
+     width: 120%;
+     margin-bottom: 100%;
+     margin-top: 50% !important;
+  }
+  img{
+    width: 100% !important;
+  }
+}
+
+  .heading {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .description,
+  .additional-description {
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .benefits-list {
+    font-size: 25px;
+    padding-left: 20px;
+  }
+
+  .additional-text {
+    font-size: 25px;
+  }
+
+  .main-image,
+  .extra-image {
+    max-height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    font-size: 25px;
+  }
+
+  .description,
+  .additional-description {
+    font-size: 25px;
+  }
+
+  .benefits-list {
+    font-size: 25px;
+  }
+
+  .additional-text {
+    font-size: 25px;
+  }
+}
+
+
+
+@media screen and (max-width: 449px) {
+  .heading {
+    font-size: 25px;
+  }
+
+  .description,
+  .additional-description {
+    font-size: 25px;
+  }
+
+  .benefits-list {
+    font-size: 25px;
+  }
+
+  .additional-text {
+    font-size: 25px;
+  }
+
+  .flooring-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+     margin-left: 55%;
+     width: 120%;
+     margin-bottom: 100%;
+     margin-top: 50% !important;
+  }
+  img{
+    width: 100% !important;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .heading {
+    font-size: 25px;
+  }
+
+  .description,
+  .additional-description {
+    font-size: 25px;
+  }
+
+  .benefits-list {
+    font-size: 25px;
+  }
+
+  .additional-text {
+    font-size: 25px;
+  }
+
+  .flooring-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+     margin-left: 50%;
+     width: 150%;
+     margin-bottom: 100%;
+     margin-top: 50% !important;
+  }
+  img{
+    width: 100% !important;
+  }
+}
