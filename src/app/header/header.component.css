@@ -1,153 +1,160 @@
-.navbar {
-    background-color: white !important;
-    height: 120px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+.custom-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar a {
-    color: black !important;
-}
-
-.navbar ul {
-    margin-left: 40%;
-    font-size: 15px;
-}
-
-.navbar #name {
-    color: black !important;
-    margin-left: 10%;
- font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .navbar-logo {
-    height: 120px !important; 
-    object-fit: contain;
+  height: 100px;
+}
+
+.menu-toggle {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  color: #333;
+  z-index: 1001;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #007bff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 999;
+
+}
+
+.service{
+  cursor: pointer;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  white-space: nowrap;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown.open .dropdown-menu {
+  display: flex;
+}
+
+.facebook i {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.form-select {
+  padding: 12px 16px;
+  font-size: 18px;
+  height: auto;
+  min-width: 160px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  width: 10%;
 }
 
 
-
-.navbar #cart {
-    font-size: 20px !important;
-    margin: -5px;
-    margin-left: 5px;
-}
-
-
-
-.navbar button {
-    background: black;
-
-}
-
-
-.navbar a:hover {
-    color: darkred !important; /* White color on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-}
-html {
-    scroll-behavior: smooth;
-  }
-  
-
-
-
-.navbar-toggler-icon {
-    color: red !important;
-}
-
-.nav-item {
-    position: relative;
-  }
-  
-  .custom-dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    z-index: 1000;
-    min-width: 150px;
-  }
-
-
-  
-  .custom-dropdown li a {
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
     display: block;
-    padding: 10px 15px;
-    color: #333;
-    text-decoration: none;
-    transition: background 0.3s;
-  }
-  
-  .custom-dropdown li a:hover {
-    background-color: #f2f2f2;
-    cursor: pointer;
-  }
-  
-  .service{
-    cursor: pointer;
   }
 
-  .nav-link i.fab.fa-facebook {
-  font-size: 25px; /* Adjust size if needed */
-  color: #4267B2;   /* Facebook blue */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links.open {
+    display: flex;
+    margin-top: 4%;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    padding-left: 15px;
+  }
+
+  .navbar-logo {
+    height: 160px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  .facebook i {
+    font-size: 30px;
+  }
 }
 
-
-
-@media screen and (max-width: 991px) {
-    .navbar ul {
-        margin-right: 3% !important;
-        text-align: right; 
-        padding: 0; 
-    }
-
-    .navbar #name {
-        margin-left: 0;
-        text-align: center; 
-    }
-
-    .navbar-logo{
-        height: 80px !important; 
-        margin-left: 0; 
-    }
-
-    .navbar #log {
-        display: none; 
-    }
-
-    .navbar #cart {
-        margin-left: 0; 
-    }
-
-    .navbar a {
-        color: red !important;
-    }
-
-    .navbar-toggler{
-       background-color: red !important;
-    }
-}
-
-@media screen and (max-width: 395px) {
-
-    .video {
-      
-      height: 200%;
-      margin-left: 5% !important;
-     }
-  
-     #primary{
-  
-      width: 30%;
-     
-     }
-  }

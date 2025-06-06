@@ -1,0 +1,10 @@
+<div *ngIf="item" class="details-container">
+  
+
+  <div class="image-gallery">
+    <img *ngFor="let img of item.images" [src]="img" [alt]="item.title">
+  </div>
+  
+
+  <p>{{ item.text | translate}}</p>
+</div>

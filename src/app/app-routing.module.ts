@@ -9,6 +9,7 @@ import { HidroizolaciaComponent } from './hidroizolacia/hidroizolacia.component'
 import { MasalebiComponent } from './masalebi/masalebi.component';
 import { ContactComponent } from './contact/contact.component';
 import { PhitxiComponent } from './phitxi/phitxi.component';
+import { DetailsComponent } from './details/details.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,11 @@ const routes: Routes = [
   {path:"masalebi",component:MasalebiComponent},
   {path:"contact",component:ContactComponent},
   {path:"pitxi",component:PhitxiComponent},
+{ 
+  path: "details/:title", 
+  loadComponent: () => import('./details/details.component').then(m => m.DetailsComponent) 
+}
+
   
 ];
 

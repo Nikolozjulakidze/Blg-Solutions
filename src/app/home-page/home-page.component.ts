@@ -8,7 +8,5 @@ import emailjs from 'emailjs-com';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent {
-
-
   
 }

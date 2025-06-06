@@ -1,87 +1,71 @@
-
-
+<!-- Product 1 -->
 <div class="product-list">
-    <!-- Product 1 -->
-    <div class="product-card">
-      <div class="product-content">
-        <img class="product-img" src="../../assets/masalebi/beton-contact.png" alt="Product 1">
-        <div class="product-details">
-          <h1>გრუნტი "BETON-CONTACT"</h1>
-          <p>მკვრივი, გლუვი ზედაპირებისთვის თაბაშირის წასმამდე. გამოიყენება ბეტონისა და ზეთის საღებავით დაფარული ზედაპირებისთვის.</p>
-          <div class="product-info">
-            <span class="price">ფასი: 107 ლარი</span>
-            <span class="weight">მოცულობა: 20კგ</span>
-          </div>
-          <img class="features" src="../../assets/myImg/features 1.png" alt="">
+  <div class="product-card">
+    <div class="product-content">
+      <img class="product-img" src="../../assets/masalebi/beton-contact.png" alt="BETON-CONTACT">
+      <div class="product-details">
+        <h1>{{ 'PRODUCTS.BETON_CONTACT.TITLE' | translate }}</h1>
+        <p>{{ 'PRODUCTS.BETON_CONTACT.DESCRIPTION' | translate }}</p>
+        <div class="product-info">
+          <span class="price">{{ 'PRODUCTS.BETON_CONTACT.PRICE' | translate }}</span>
+          <span class="weight">{{ 'PRODUCTS.BETON_CONTACT.VOLUME' | translate }}</span>
         </div>
+        <img class="features" [src]="'PRODUCTS.BETON_CONTACT.IMAGE' | translate" alt="">
       </div>
     </div>
-  
-    <!-- Repeat the same structure for each product... -->
   </div>
+</div>
 
-  
-  <div class="product-list">
-    <!-- Product 1 -->
-    <div class="product-card">
-      <div class="product-content">
-        <img class="product-img" src="../../assets/masalebi/spec.png" alt="Product 1">
-        <div class="product-details">
-          <h1>გრუნტი სპეც "ინტერიერის"</h1>
-          <p>ყველაზე ხელმისაწვდომი სტარატელის ბრენდის პრაიმერებს შორის. იგი გამოიყენება შიდა შენობაში რემონტის ბოლო ეტაპებზე, კედლებისა და ჭერის ზედაპირების დასამუშავებლად, შეღებვამდე ან შპალერის დადებამდე. იგი შექმნილია გამოყენებული მასალების შეწეპების სიმტკიცის გასაზრდელად და საღებავებისა და შპალერის წებოების მოხმარების შესამცირებლად.</p>
-          <div class="product-info">
-            <span class="price">ფასი: 39 ლარი</span>
-            <span class="weight">მოცულობა: 10ლ</span>
-          </div>
-          <img class="features" src="../../assets/myImg/features 2.png" alt="">
+<!-- Product 2 -->
+<div class="product-list">
+  <div class="product-card">
+    <div class="product-content">
+      <img class="product-img" src="../../assets/masalebi/spec.png" alt="SPEC">
+      <div class="product-details">
+        <h1>{{ 'PRODUCTS.SPEC.TITLE' | translate }}</h1>
+        <p>{{ 'PRODUCTS.SPEC.DESCRIPTION' | translate }}</p>
+        <div class="product-info">
+          <span class="price">{{ 'PRODUCTS.SPEC.PRICE' | translate }}</span>
+          <span class="weight">{{ 'PRODUCTS.SPEC.VOLUME' | translate }}</span>
         </div>
+      <img class="features" [src]="'PRODUCTS.SPEC.IMAGE' | translate" alt="">
       </div>
     </div>
-  
-    <!-- Repeat the same structure for each product... -->
   </div>
+</div>
 
-  
-
-  <div class="product-list">
-    <!-- Product 1 -->
-    <div class="product-card">
-      <div class="product-content">
-        <img class="product-img" src="../../assets/masalebi/universaluri.png" alt="Product 1">
-        <div class="product-details">
-          <h1>გრუნტი "უნივერსალური"</h1>
-          <p>იგი გამოიყენება შიდა და გარეთ კედლების, ჭერისა და იატაკის ზედაპირების დასამუშავებლად შემდგომი დასრულების სამუშაოებამდე. იგი გამოიყენება წასასმელი მასალების სიმკვრივის გასაზრდელად, უზრუნველყოფს რასტვორის თანაბარ შეკვრას თაბაშირის და ცემეტის ნარევების. </p>
-          <div class="product-info">
-            <span class="price">ფასი: 42 ლარი</span>
-            <span class="weight">მოცულობა: 10ლ</span>
-          </div>
-          <img class="features" src="../../assets/masalebi/features 3.png" alt="">
+<!-- Product 3 -->
+<div class="product-list">
+  <div class="product-card">
+    <div class="product-content">
+      <img class="product-img" src="../../assets/masalebi/universaluri.png" alt="UNIVERSAL">
+      <div class="product-details">
+        <h1>{{ 'PRODUCTS.UNIVERSAL.TITLE' | translate }}</h1>
+        <p>{{ 'PRODUCTS.UNIVERSAL.DESCRIPTION' | translate }}</p>
+        <div class="product-info">
+          <span class="price">{{ 'PRODUCTS.UNIVERSAL.PRICE' | translate }}</span>
+          <span class="weight">{{ 'PRODUCTS.UNIVERSAL.VOLUME' | translate }}</span>
         </div>
+       <img class="features" [src]="'PRODUCTS.UNIVERSAL.IMAGE' | translate" alt="">
       </div>
     </div>
-  
-    <!-- Repeat the same structure for each product... -->
   </div>
+</div>
 
-  
-
-  <div class="product-list">
-    <!-- Product 1 -->
-    <div class="product-card">
-      <div class="product-content">
-        <img class="product-img" src="../../assets/masalebi/grma shegwevadobis.png" alt="Product 1">
-        <div class="product-details">
-          <h1>გრუნტი "ღრმა შეხწევადობის"</h1>
-          <p>იგი გამოიყენება შიდა და გარეთ კედლების, ჭერისა და იატაკის ზედაპირების დასამუშავებლად შემდგომი დასრულების სამუშაოებამდე. იგი შექმნილია ძველი, ფხვიერი, არამდგრადი საძირკვლის გასამაგრებლად, უზრუნველყოფს თაბაშირისა და ცემენტის ნარევების ერთგვაროვან დამაგრებას, ზრდის გამოყენებული მასალების საძირკველთან გადაბმის ძალას. </p>
-          <div class="product-info">
-            <span class="price">ფასი:46 ლარი</span>
-            <span class="weight">მოცულობა: 10ლ</span>
-          </div>
-          <img class="features" src="../../assets/myImg/features 4.png" alt="">
+<!-- Product 4 -->
+<div class="product-list">
+  <div class="product-card">
+    <div class="product-content">
+      <img class="product-img" src="../../assets/masalebi/grma shegwevadobis.png" alt="DEEP">
+      <div class="product-details">
+        <h1>{{ 'PRODUCTS.DEEP.TITLE' | translate }}</h1>
+        <p>{{ 'PRODUCTS.DEEP.DESCRIPTION' | translate }}</p>
+        <div class="product-info">
+          <span class="price">{{ 'PRODUCTS.DEEP.PRICE' | translate }}</span>
+          <span class="weight">{{ 'PRODUCTS.DEEP.VOLUME' | translate }}</span>
         </div>
+        <img class="features" [src]="'PRODUCTS.DEEP.IMAGE' | translate" alt="">
       </div>
     </div>
-  
-    <!-- Repeat the same structure for each product... -->
   </div>
-  
+</div>

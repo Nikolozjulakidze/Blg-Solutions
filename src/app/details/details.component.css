@@ -1,0 +1,57 @@
+/* Wrapper for the entire detail */
+.details-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;  
+  margin-top: 20%;
+}
+
+/* Title styling */
+.details-container h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Gallery container */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Individual image */
+.image-gallery img {
+  width: 280px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Zoom effect on hover */
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Text below the images */
+.details-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .image-gallery img {
+    width: 100%;
+  }
+}

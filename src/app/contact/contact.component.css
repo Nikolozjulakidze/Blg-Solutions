@@ -120,6 +120,7 @@
       padding: 3rem 2rem;
       width: 210% !important;
       height: 100vh;
+      margin-top: 40%;
     }
   
    .product-section{
@@ -151,6 +152,8 @@
     .contact-section{
     margin-left: 40% !important;
     width: 210%;
+    margin-top: 40%;
+    margin-bottom: 30%;
     }
   
   }

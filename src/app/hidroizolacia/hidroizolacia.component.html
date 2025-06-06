@@ -1,45 +1,35 @@
-
-
-
+<!-- Product 1 -->
 <div class="product-list">
-    <!-- Product 1 -->
-    <div class="product-card">
-      <div class="product-content">
-        <img class="product-img" src="../../assets/masalebi/wasasmeli.png" alt="Product 1">
-        <div class="product-details">
-          <h1>ჰიდროიზოლაცია პოლიმერული "SONORA"</h1>
-          <p>გამიზნულია მყარი წყალგაუმტარი უნაკერო საფარის შესაქმნელად კედლებისა და იატაკების ზედაპირებზე შენობის შიგნით, რომელიც პერიოდულად ექვემდებარება ტენიანობას (სველი წერტილები, საშხაპეები, სამზარეულოები, სამრეცხაოები და ა.შ.) შემდგომ სამუშაოებამდე. არ არის განკუთვნილი სასმელ წყალთან და საკვებ პროდუქტებთან პირდაპირი კონტაქტისთვის.</p>
-          <div class="product-info">
-            <span class="price">ფასი: 59 ლარი</span>
-            <span class="weight">მოცულობა: 20კგ</span>
-          </div>
-          <img class="features" src="../../assets/masalebi/features 6.png" alt="">
+  <div class="product-card">
+    <div class="product-content">
+      <img class="product-img" src="../../assets/masalebi/wasasmeli.png" alt="POLYMER_WATERPROOFING_SONORA">
+      <div class="product-details">
+        <h1>{{ 'PRODUCTS.SONORA.TITLE' | translate }}</h1>
+        <p>{{ 'PRODUCTS.SONORA.DESCRIPTION' | translate }}</p>
+        <div class="product-info">
+          <span class="price">{{ 'PRODUCTS.SONORA.PRICE' | translate }}</span>
+          <span class="weight">{{ 'PRODUCTS.SONORA.VOLUME' | translate }}</span>
         </div>
+        <img class="features" [src]="'PRODUCTS.SONORA.IMAGE' | translate" alt="">
       </div>
     </div>
-  
-   
   </div>
+</div>
 
-  
-  <div class="product-list">
-    <!-- Product 1 -->
-    <div class="product-card">
-      <div class="product-content">
-        <img class="product-img" src="../../assets/masalebi/polimeruli.png" alt="Product 1">
-        <div class="product-details">
-          <h1>ჰიდროიზოლაცია წასასმელი"AQUASHIELD"</h1>
-          <p>განკუთვნილია ფასადების, სარდაფების, საძირკვლის ჰიდროიზოლაციისთვის; საცურაო აუზები და ღია წყლის რეზერვუარები; სივრცეები რომელიც არ თბება (სარდაფები, ავტოფარეხები, აივნები და ა.შ.), აგრეთვე პერიოდულად ტენიანობის ზემოქმედების ქვეშ მყოფი ოთახები (სველი წერტილები, საშხაპეები, სამზარეულოები, სამრეცხაოები და ა.შ.). გამოიყენება გარე და შიდა სამუშაოებისთვის, ასევე "თბილი იატაკის" სისტემაში. გამოიყენება გამძლე, არადეფორმირებად ზედაპირებზე: ბეტონი, ფიჭური ბეტონი, აგური, ცემენტის თაბაშირი, სტიაჟკა, ძველ დაგებულ ფილებზე.</p>
-          <div class="product-info">
-            <span class="price">ფასი: 62 ლარი</span>
-            <span class="weight">მოცულობა: 10ლ</span>
-          </div>
-          <img class="features" src="../../assets/masalebi/features 7.png" alt="">
+<!-- Product 2 -->
+<div class="product-list">
+  <div class="product-card">
+    <div class="product-content">
+      <img class="product-img" src="../../assets/masalebi/polimeruli.png" alt="POLYMER_WATERPROOFING_AQUASHIELD">
+      <div class="product-details">
+        <h1>{{ 'PRODUCTS.AQUASHIELD.TITLE' | translate }}</h1>
+        <p>{{ 'PRODUCTS.AQUASHIELD.DESCRIPTION' | translate }}</p>
+        <div class="product-info">
+          <span class="price">{{ 'PRODUCTS.AQUASHIELD.PRICE' | translate }}</span>
+          <span class="weight">{{ 'PRODUCTS.AQUASHIELD.VOLUME' | translate }}</span>
         </div>
+        <img class="features" [src]="'PRODUCTS.AQUASHIELD.IMAGE' | translate" alt="">
       </div>
     </div>
-  
-    <!-- Repeat the same structure for each product... -->
   </div>
-
-  
+</div>

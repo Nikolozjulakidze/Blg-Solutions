@@ -1,0 +1,187 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "SERVICES": "Services",
+    "SERVICE1": "Waterproofing Installation",
+    "SERVICE2": "Self-Leveling Floor",
+    "MATERIALS": "Materials",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "HOME": {
+    "HEADING": "",
+    "SUBHEADING": "Industrial quality, professional service — everything your successful project needs.",
+    "CONTACT_US": "Contact Us",
+    "OUR_SERVICES": "Our Services",
+    "LEARN_MORE": "Learn More",
+    "OUR_PROJECTS": "Our Projects",
+    "PROJECT1_TITLE": "Tbilisi Marriott",
+    "PROJECT1_DESC": "Restoration and waterproofing from the negative side was done on the brick surface",
+    "PROJECT2_TITLE": "Oda Vazisubani",
+    "PROJECT2_DESC": "High-adhesion bitumen-polyurethane super-elastic waterproofing was arranged in the parking area",
+    "PROJECT3_TITLE": "Gasgo Vazisubani",
+    "PROJECT3_DESC": "Bitumen-rubber waterproofing was done on the foundation",
+     "PROJECT4_TITLE": "Urban X",
+    "PROJECT4_DESC": "At the request of the construction company Urban X, a self-leveling floor was installed at the plastic surgery center in Tbilisi. The work involved the use of self-leveling floor material imported by us.",
+    "LEARN_MORE": "Learn More"
+  },
+ 
+   "HYDRO": {
+      "TITLE": "Waterproofing Installation",
+      "SERVICE1": "Foundation Waterproofing",
+      "SERVICE2": "Roofing: Roll and Applied",
+      "SERVICE3": "Balconies and Terraces",
+      "SERVICE4": "Green Roofing Systems",
+      "SERVICE5": "Under Slab: Interior Waterproofing",
+      "SERVICE6": "Injection",
+      "SERVICE7": "Pools and Reservoirs"
+    },
+
+    "FLOORING": {
+      "TITLE": "Self-Leveling Floor Installation",
+      "DESC1": "Self-leveling floor material is used for final surface preparation, resulting in a perfectly smooth floor ready for tiles, laminate, parquet, linoleum, carpet, etc. It’s ideal for both significant and minor level differences in the base. We correct unevenness from 1mm to 70mm.",
+      "BENEFIT1": "✔ Fast drying time",
+      "BENEFIT2": "✔ High strength and durability.",
+      "BENEFIT3": "✔ Ideal base for different coverings.",
+      "DESC2": "Self-leveling floors provide a flawless and smooth surface. Recommended for both commercial and residential spaces where durability and perfect leveling are essential. We offer fast, high-quality, and affordable service."
+    },
+
+      "CARDS": {
+    "GRUNTI": "Primer",
+    "TVITSWOREBADI": "Self-leveling",
+    "HIDROIZOLACIA": "Waterproofing",
+    "PITXI": "Putty",
+    "LEARN_MORE": "Learn More"
+  },
+
+  "PRODUCTS": {
+    "BETON_CONTACT": {
+      "IMAGE":"assets/Translation/English/Beton-English.PNG",
+      "TITLE": "Primer 'BETON-CONTACT'",
+      "DESCRIPTION": "For dense, smooth surfaces before applying plaster. Suitable for concrete and oil-painted surfaces.",
+      "PRICE": "Price: 107 GEL",
+      "VOLUME": "Volume: 20kg"
+    },
+    "SPEC": {
+      "IMAGE":"assets/Translation/English/Spec-English.PNG",
+      "TITLE": "Special Primer 'Interior'",
+      "DESCRIPTION": "One of the most affordable primers by Starateli. Used indoors before painting or wallpapering...",
+      "PRICE": "Price: 39 GEL",
+      "VOLUME": "Volume: 10L"
+    },
+    "UNIVERSAL": {
+      "IMAGE":"assets/Translation/English/Uni-English.PNG",
+      "TITLE": "Primer 'Universal'",
+      "DESCRIPTION": "Used indoors and outdoors for walls, ceilings, and floors. Strengthens applied materials...",
+      "PRICE": "Price: 42 GEL",
+      "VOLUME": "Volume: 10L"
+    },
+    "DEEP": {
+      "IMAGE":"assets/Translation/English/Deep-English.PNG",
+      "TITLE": "Primer 'Deep Penetrating'",
+      "DESCRIPTION": "Used indoors and outdoors for old, fragile surfaces. Strengthens adhesion...",
+      "PRICE": "Price: 46 GEL",
+      "VOLUME": "Volume: 10L"
+    },
+
+     "THIN": {
+      "IMAGE":"assets/Translation/English/Thin-English.PNG",
+      "TITLE": "Self-leveling 'Thin'",
+      "DESCRIPTION": "Used for final smoothing of floor surfaces (concrete, cement-sand...) before laying...",
+      "PRICE": "Price: 37 GEL",
+      "VOLUME": "Volume: 25kg"
+    },
+    "THICK": {
+      "IMAGE":"assets/Translation/English/Thick-English.PNG",
+      "TITLE": "Self-leveling 'Thick'",
+      "DESCRIPTION": "Used for final smoothing of concrete or cement-sand bases before floor covering...",
+      "PRICE": "Price: 34 GEL",
+      "VOLUME": "Volume: 25kg"
+    },
+    "HIGH": {
+      "IMAGE":"assets/Translation/English/High-English.PNG",
+      "TITLE": "Self-leveling 'Heavy Duty'",
+      "DESCRIPTION": "Ideal for surfaces requiring high operational loads such as garages or warehouses...",
+      "PRICE": "Price: 33 GEL",
+      "VOLUME": "Volume: 25kg"
+    },
+    "PRACTICAL": {
+      "IMAGE":"assets/Translation/English/Practical-English.PNG",
+      "TITLE": "Self-leveling 'Practical'",
+      "DESCRIPTION": "Used for leveling before tile, laminate, parquet, linoleum installation...",
+      "PRICE": "Price: 31 GEL",
+      "VOLUME": "Volume: 25kg"
+    },
+    "FAST": {
+        "IMAGE":"assets/Translation/English/Fast-English.PNG",
+      "TITLE": "Self-leveling 'Fast-setting'",
+      "DESCRIPTION": "Suitable for use in short-time projects and underfloor heating systems...",
+      "PRICE": "Price: 34 GEL",
+      "VOLUME": "Volume: 25kg"
+    },
+      "SONORA": {
+      "IMAGE": "assets/Translation/English/Sonora-English.PNG",
+      "TITLE": "Polymer Waterproofing \"SONORA\"",
+      "DESCRIPTION": "Designed to create a solid, seamless waterproof coating on walls and floors inside buildings that are periodically exposed to moisture (wet rooms, showers, kitchens, laundries, etc.) before subsequent finishing work. Not intended for direct contact with drinking water or food products.",
+      "PRICE": "Price: 59 GEL",
+      "VOLUME": "Volume: 20 kg"
+    },
+    "AQUASHIELD": {
+      "IMAGE": "assets/Translation/English/Aqua-English.PNG",
+      "TITLE": "Brush-on Waterproofing \"AQUASHIELD\"",
+      "DESCRIPTION": "Intended for waterproofing facades, basements, foundations, swimming pools, and open water reservoirs; unheated spaces (basements, garages, balconies, etc.), as well as rooms periodically exposed to moisture (wet rooms, showers, kitchens, laundries, etc.). Suitable for both exterior and interior work, including underfloor heating systems. Applied on durable, non-deformable surfaces: concrete, cellular concrete, brick, cement plaster, screed, old tile coverings.",
+      "PRICE": "Price: 62 GEL",
+      "VOLUME": "Volume: 10 L"
+    },
+
+    "PUTTY_MACHINE": {
+      "IMAGE":"assets/Translation/English/Machine-English.PNG",
+      "TITLE": "Machine Putty",
+      "DESCRIPTION": "",
+      "PRICE": "Price: 22 GEL",
+      "VOLUME": "Volume: 30kg"
+    },
+    "OPTIMUM": {
+      "IMAGE":"assets/Translation/English/Optium-English.PNG",
+      "TITLE": "Putty 'Optimum'",
+      "DESCRIPTION": "",
+      "PRICE": "Price: 21 GEL",
+      "VOLUME": "Volume: 30kg"
+    },
+    "POLYMER": {
+      "IMAGE": "assets/Translation/English/Polimer-English.PNG",
+      "TITLE": "Polymeric Putty PolyArt",
+      "DESCRIPTION": "",
+      "PRICE": "Price: 29 GEL",
+      "VOLUME": "Volume: 20kg"
+    },
+    "FACADE": {
+      "IMAGE": "assets/Translation/English/Facade-English.PNG",
+      "TITLE": "Facade Putty (Cement Base)",
+      "DESCRIPTION": "Used for final smoothing of floor surfaces (concrete, cement-sand, gypsum, anhydrite)...",
+      "PRICE": "Price: 31 GEL",
+      "VOLUME": "Volume: 25kg"
+    }
+
+  },
+
+  
+  "CONTACT": {
+    "HEADING": "Contact Us",
+    "SUBTEXT1": "If you have questions or would like to collaborate with us, write to us and we will definitely reply.",
+    "SUBTEXT2": "Or call us: +995 579 98 98 98",
+    "MAIL": "Mail: info@blg-solutions.ge",
+    "PLACEHOLDER_NAME": "Enter your name",
+    "PLACEHOLDER_EMAIL": "Enter your email",
+    "PLACEHOLDER_MESSAGE": "Enter your message",
+    "SUBMIT": "Send"
+  },
+
+  "DETAILS":{
+      "urbanX.description": "By order of the construction company Urban X, a modern self-leveling floor system was successfully installed in the plastic surgery center in Tbilisi.\n\n⚙ During the work, high-quality self-leveling material supplied by BLG Solutions was used, which is distinguished by:\n— Smoothness\n— Fast curing\n— Durability and aesthetics\n\n✨ Result: a technically precise and visually elegant floor that fully meets modern standards.\n\n✅ Professionalism is in the details — choose BLG Solutions.",
+      "tbilisiMariott.description": "🔹 Project completed by – BLG solutions\nAt one of Tbilisi’s most prestigious locations – by order of 'Tbilisi Marriott', restoration of brick plaster and negative-side waterproofing works were carried out.\n\n🔧 Waterproofing performed using special technology ensures:\n✔ Protection of the structure from moisture and damage\n✔ Preservation of the brick structure\n✔ Long-term durability and visual stability\n\n📍 Work was performed with maximum consideration of the architectural specifics of the historical building.\n\n📞 For more information:\n📲 Contact us: 579 98 98 98\n🌐 Visit our website: www.blg-solutions.ge",
+      "odaVazisubani.description": "🔹 Project completed by – BLG solutions\nBy order of 'Oda Vazisubani', high-quality waterproofing work was completed on the lower level of the parking area.\n\n🛠 A bitumen-polyurethane super-elastic waterproofing system was used, which ensures:\n✔ Excellent adhesion\n✔ Elasticity\n✔ Long-term protection from moisture and infiltration\n\n📍 The work was carried out quickly, in full compliance with technical standards and considering the project specifics.\n\n💧 Strong protection from moisture — quality you can trust\n🔧 BLG solutions — every detail matters.\n📞 For more information:\n📲 Contact us: 579 98 98 98\n🌐 Visit our website: www.blg-solutions.ge",
+      "gasgoVazisubani.description": "🔹 Project completed by – BLG solutions\nAs part of the 'Gasgo Vazisubani' project, bitumen-rubber waterproofing was carried out in the foundation, protecting the structure from moisture and ensuring long-term stability of the base.\n\n💧 The bitumen-rubber system features:\n✔ High elasticity\n✔ Strong adhesion\n✔ Durability in extreme conditions\n\n📍 Work was performed quickly, safely, and in accordance with international standards.\n\n📞 For more information:\n📲 Contact us: 579 98 98 98\n🌐 Visit our website: www.blg-solutions.ge"
+  }
+
+}

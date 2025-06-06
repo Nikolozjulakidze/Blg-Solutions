@@ -1,59 +1,50 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a id="name" class="navbar-brand" href="#">
-      <img src="../../assets/./myImg/./solutions.jpg" alt="Logo" style="height: 300px" class="navbar-logo">
+<nav class="custom-navbar">
+  <div class="nav-container">
+    <a id="name" class="logo-link" href="#">
+      <img src="../../assets/myImg/solutions.jpg" alt="Logo" class="navbar-logo" />
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <button class="menu-toggle" (click)="toggleMenu()">☰</button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/" routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact:true}">მთავარი</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link active"
-            aria-current="page"
-            (click)="toggleDropdown()"
-            [class.open]="isDropdownOpen"
-          >
-           <p class="service">სერვისები</p>
+    <div class="nav-links" [class.open]="isMenuOpen">
+      <ul>
+        <li>
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            {{ 'NAV.HOME' | translate }}
           </a>
-          <ul class="custom-dropdown" *ngIf="isDropdownOpen">
-            <li><a routerLink="/hydroisolation" (click)="closeDropdown()">ჰიდროიზოლაციის მოწყობა</a></li>
-            <li><a routerLink="/self-floor" (click)="closeDropdown()">თვითსწორებადი იატაკის დაგება</a></li>
-
+        </li>
+        <li class="dropdown" [class.open]="isDropdownOpen">
+          <a class="service" (click)="toggleDropdown()">
+            {{ 'NAV.SERVICES' | translate }}
+          </a>
+          <ul class="dropdown-menu" *ngIf="isDropdownOpen">
+            <li>
+              <a routerLink="/hydroisolation" (click)="closeDropdown()">
+                {{ 'NAV.SERVICE1' | translate }}
+              </a>
+            </li>
+            <li>
+              <a routerLink="/self-floor" (click)="closeDropdown()">
+                {{ 'NAV.SERVICE2' | translate }}
+              </a>
+            </li>
           </ul>
         </li>
-
-        <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" routerLink="/masalebi">მასალები</a>
-              </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#references">ჩვენი პროექტები</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="/contact">კონტაქტი</a>
-        </li>
-        
-            <li class="nav-item">
-          <a class="nav-link" href="https://www.facebook.com/profile.php?id=61564430607790&locale=ka_GE" target="_blank">
+        <li><a routerLink="/masalebi" routerLinkActive="active">{{ 'NAV.MATERIALS' | translate }}</a></li>
+        <li><a href="#references">{{ 'NAV.PROJECTS' | translate }}</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">{{ 'NAV.CONTACT' | translate }}</a></li>
+        <li>
+          <a class="facebook" href="https://www.facebook.com/profile.php?id=61564430607790&locale=ka_GE" target="_blank">
             <i class="fab fa-facebook"></i>
           </a>
         </li>
 
       </ul>
-
-      
     </div>
+          <select class="form-select" (change)="ChangeLang($event)">
+          <option [selected]="lang ==='geo'" value="geo">ქართული</option>
+          <option [selected]="lang ==='eng'" value="eng">English</option>
+          <option [selected]="lang ==='rus'" value="rus">Russian</option>
+        </select>
   </div>
 </nav>

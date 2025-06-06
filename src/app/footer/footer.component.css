@@ -1,37 +1,101 @@
+/* Footer styles */
 footer {
-    background-color: black !important;
-    color: white;
-  }
-  
-  a {
-    color: whitesmoke !important;
-  }
-  
-  #cpy {
-    margin-right: 50% !important;
-  }
-  
-  .fa-facebook, .fa-youtube {
-    margin-left: 10px; 
-    color: #fff; 
-  }
-  
-  @media screen and (max-width: 800px) {
-    footer{
-      width: 210%;
-    }
+  background-color: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 20px 0;
+}
 
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #333;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Wrap if screen size is narrow */
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-content .facebook-link {
+  text-decoration: none;
+  color: #3b5998; /* Facebook blue */
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.footer-content .facebook-link i {
+  margin-right: 5px;
+}
+
+/* Optional: hover effect for the Facebook link */
+.footer-content .facebook-link:hover {
+  color: #2d4373;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+
+  footer[_ngcontent-ng-c1676311126] {
+    background-color: #0000000d;
+    text-align: center;
+    padding: 20px 0;
+    width: 210%;
+}
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* space between elements */
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
   }
 
-    
-  @media screen and (max-width: 449px) {
-    footer{
-      width: 230%;
-    }
+  .footer-content p {
+    font-size: 13px;
+    margin: 0;
   }
 
-  @media screen and (max-width: 420px) {
-    footer{
-      width: 250%;
-    }
+  .footer-content .facebook-link {
+    font-size: 16px;
+    margin-left: 0; /* reset margin for vertical layout */
   }
+}
+
+@media (max-width: 449px) {
+  footer[_ngcontent-ng-c1676311126] {
+    background-color: #0000000d;
+    text-align: center;
+    padding: 20px 0;
+    width: 230%;
+}
+}
+
+@media (max-width: 420px) {
+  .footer-content {
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .footer-content .facebook-link {
+    font-size: 15px;
+  }
+
+   footer[_ngcontent-ng-c1676311126] {
+    background-color: #0000000d;
+    text-align: center;
+    padding: 20px 0;
+    width: 250%;
+}
+}
+
