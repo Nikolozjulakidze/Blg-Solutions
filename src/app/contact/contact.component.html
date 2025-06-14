@@ -1,7 +1,11 @@
 <section class="contact-section">
   <h2 class="contact-heading">{{ 'CONTACT.HEADING' | translate }}</h2>
   <p class="contact-subtext">{{ 'CONTACT.SUBTEXT1' | translate }}</p>
-  <p class="contact-subtext">{{ 'CONTACT.SUBTEXT2' | translate }}</p>
+  <p class="contact-subtext">
+  {{ 'CONTACT.SUBTEXT2' | translate | slice:0:13 }}
+  <a href="tel:+995579989898">+995 579 98 98 98</a>
+</p>
+
   <p class="contact-subtext">{{ 'CONTACT.MAIL' | translate }}</p>
 
   <div class="contact-form-wrapper">

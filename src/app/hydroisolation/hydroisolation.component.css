@@ -1,221 +1,115 @@
-h2{
-    margin-top: 10%;
+.services-showcase {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.product-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-  }
-
-  .product-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 30px;
-  }
-
-  .tables-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 40px;
-  }
-
-  .table-item {
-    width: 350px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-
-  .table-item img {
-    width: 100%;
-    height:400px;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-  }
-
-  .table-item h3 {
-    margin-top: 15px;
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-
-  .table-item:hover {
-   cursor: pointer;
-  }
-
- @media (max-width: 800px) {
-
-  h2{
-    margin-left: 60%;
-    width: 100%;
-    margin-top: 30%;
-  }
-
-  .tables-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .table-item {
-    width: 90%; /* Full width with padding on sides */
-    margin-bottom: 20px;
-    margin-left: 65%;
-  }
-
-  .table-item img {
-    height: 250px; /* Reduce image height */
-  }
-
-  .product-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .table-item h3 {
-    font-size: 1rem;
-  }
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+  margin-top: 8%;
 }
 
-@media (max-width: 670px) {
-  h2{
-   margin-top: 30%;
-  }
+#Title{
+  margin-left: 25%;
 }
 
-@media (max-width: 600px) {
-  h2{
-   margin-top: 30%;
-    margin-left: 55%;
-  }
+#Title2{
+  margin-left: 16%;
 }
 
-@media (max-width: 449px) {
-  h2{
-
-   font-size: 40px !important;
-   width: 140% !important;
-  }
-    .tables-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .table-item {
-    width: 130%; /* Full width with padding on sides */
-    margin-bottom: 20px;
-    margin-left: 60%;
-  }
-
-  .table-item img {
-    height: 450px; /* Reduce image height */
-  }
-
-  .product-section h2 {
-    font-size: 2.5rem;
-  }
-
-  .table-item h3 {
-    font-size: 2rem;
-  }
+#Title3{
+  margin-left: 10%;
 }
 
-@media (max-width: 449px) {
-  h2{
-   margin-top: 50%;
-   font-size: 40px !important;
-   width: 160% !important;
-  }
-    .tables-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .table-item {
-    width: 130%; /* Full width with padding on sides */
-    margin-bottom: 20px;
-    margin-left: 75%;
-  }
-
-  .table-item img {
-    height: 450px; /* Reduce image height */
-  }
-
-  .product-section h2 {
-    font-size: 2.5rem;
-  }
-
-  .table-item h3 {
-    font-size: 2rem;
-  }
+#Title4{
+  margin-left: 25%;
 }
 
-@media (max-width: 420px) {
-  h2{
-   margin-top: 40%;
-   font-size: 40px !important;
-   width: 160% !important;
-  }
-    .tables-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .table-item {
-    width: 130%; /* Full width with padding on sides */
-    margin-bottom: 20px;
-    margin-left: 80%;
-  }
-
-  .table-item img {
-    height: 450px; /* Reduce image height */
-  }
-
-  .product-section h2 {
-    font-size: 2.5rem;
-  }
-
-  .table-item h3 {
-    font-size: 2rem;
-  }
+#hydro-intro{
+  margin-top: 15%;
 }
 
-@media (max-width: 407px) {
-  h2{
-   margin-top: 50%;
-   font-size: 40px !important;
-   width: 160% !important;
-  }
-    .tables-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
+.text-wrapper {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 60px;
+}
 
-  .table-item {
-    width: 170%; /* Full width with padding on sides */
-    margin-bottom: 20px;
-    margin-left: 60%;
-  }
+.text-content {
+  background-color: #f2f2f2;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .table-item img {
-    height: 450px; /* Reduce image height */
-  }
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #333;
+  margin-top: 4%;
+}
 
-  .product-section h2 {
-    font-size: 2.5rem;
-  }
+.description,
+.additional-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+  margin-top: 5%;
+}
 
-  .table-item h3 {
-    font-size: 2rem;
-  }
+.benefits-list {
+  padding-left: 20px;
+  margin: 0;
+  list-style-type: disc;
+  color: #444;
+}
+
+.additional-text {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+/* Service Grid */
+.service-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tables-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.table-item {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.table-item h3 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #333;
 }

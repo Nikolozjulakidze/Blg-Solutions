@@ -49,6 +49,11 @@
   text-align: center;
 }
 
+.translated-text {
+  white-space: pre-line;  /* This respects \n and shows line breaks */
+}
+
+
 /* Responsive for smaller screens */
 @media (max-width: 600px) {
   .image-gallery img {

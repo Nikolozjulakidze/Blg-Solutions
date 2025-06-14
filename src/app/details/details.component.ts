@@ -25,10 +25,7 @@ export class DetailsComponent {
     {
       title: 'tbilisi-marriott',
       images: [
-        '../../assets/Projects/meriot 1.jpg',
-        '../../assets/Projects/meriot 2.jpg',
-        '../../assets/Projects/meriot 3.jpg',
-        '../../assets/Projects/meriot 4.jpg'
+       
       ],
       text: 'DETAILS.tbilisiMariott.description'
     },
@@ -38,7 +35,8 @@ export class DetailsComponent {
         '../../assets/Projects/Urban x picture 1 .jpg',
         '../../assets/Projects/Urban x picture 2.jpg',
         '../../assets/Projects/Urban x picture 3.jpg',
-        '../../assets/Projects/Urban x picture 4.jpg'
+        '../../assets/Projects/Urban x picture 4.jpg',
+        '../../assets/Projects/Urban x picture 5.jpg',
       ],
       // Here use the translation key as string only
       text: 'DETAILS.urbanX.description'  

@@ -38,13 +38,33 @@
             <i class="fab fa-facebook"></i>
           </a>
         </li>
-
       </ul>
     </div>
-          <select class="form-select" (change)="ChangeLang($event)">
-          <option [selected]="lang ==='geo'" value="geo">ქართული</option>
-          <option [selected]="lang ==='eng'" value="eng">English</option>
-          <option [selected]="lang ==='rus'" value="rus">Russian</option>
-        </select>
+
+    <!-- ✅ Language Selector -->
+<div class="custom-select-container" (click)="toggleLangDropdown()" [class.open]="isLangOpen">
+  <div class="selected-flag">
+    <img [src]="selectedFlag" alt="Selected Language" />
+    <i class="fas fa-chevron-down"></i>
+  </div>
+  <div class="custom-select-dropdown" *ngIf="isLangOpen">
+    <div class="flag-option" (click)="ChangeLang('geo'); selectFlag('geo')">
+      <p>ქართული</p>
+      <img src="assets/Flags/Georgia.jpg" alt="Georgian" />
+    </div>
+    <div class="flag-option" (click)="ChangeLang('eng'); selectFlag('eng')">
+      <p>English</p>
+      <img src="assets/Flags/English.png" alt="English" />
+    </div>
+    <div class="flag-option" (click)="ChangeLang('rus'); selectFlag('rus')">
+      <p>Russian</p>
+      <img src="assets/Flags/Russian.png" alt="Russian" />
+    </div>
+  </div>
+</div>
+
+
+
+
   </div>
 </nav>

@@ -6,7 +6,8 @@
     "SERVICE2": "Self-Leveling Floor",
     "MATERIALS": "Materials",
     "PROJECTS": "Projects",
-    "CONTACT": "Contact"
+    "CONTACT": "Contact",
+    "lOGO":"assets/Flags/English.png"
   },
   "HOME": {
     "HEADING": "",
@@ -26,25 +27,55 @@
     "LEARN_MORE": "Learn More"
   },
  
-   "HYDRO": {
-      "TITLE": "Waterproofing Installation",
-      "SERVICE1": "Foundation Waterproofing",
-      "SERVICE2": "Roofing: Roll and Applied",
-      "SERVICE3": "Balconies and Terraces",
-      "SERVICE4": "Green Roofing Systems",
-      "SERVICE5": "Under Slab: Interior Waterproofing",
-      "SERVICE6": "Injection",
-      "SERVICE7": "Pools and Reservoirs"
-    },
 
-    "FLOORING": {
-      "TITLE": "Self-Leveling Floor Installation",
-      "DESC1": "Self-leveling floor material is used for final surface preparation, resulting in a perfectly smooth floor ready for tiles, laminate, parquet, linoleum, carpet, etc. It’s ideal for both significant and minor level differences in the base. We correct unevenness from 1mm to 70mm.",
-      "BENEFIT1": "✔ Fast drying time",
-      "BENEFIT2": "✔ High strength and durability.",
-      "BENEFIT3": "✔ Ideal base for different coverings.",
-      "DESC2": "Self-leveling floors provide a flawless and smooth surface. Recommended for both commercial and residential spaces where durability and perfect leveling are essential. We offer fast, high-quality, and affordable service."
+  "HYDRO": {
+    "TITLE": "Waterproofing Installation",
+    "SERVICE1": "Foundation Waterproofing",
+    "SERVICE2": "Roofing: Roll-on, Liquid-applied",
+    "SERVICE3": "Balconies and Terraces",
+    "SERVICE4": "Green Roofing Systems",
+    "SERVICE5": "Under Tile: Interior Waterproofing",
+    "SERVICE6": "Injection",
+    "SERVICE7": "Pools and Reservoirs",
+    "INTRO_TITLE": "Waterproofing Installation",
+    "INTRO_TEXT": "One of the most important parts of construction is waterproofing, which protects buildings from moisture and water damage. Proper waterproofing is crucial for durability and comfort.",
+    "DETAIL_TITLE": "Detailed Description of Waterproofing",
+    "DETAIL_TEXT": "Waterproofing is one of the most critical aspects of construction, protecting structures from water and damp. This process involves various techniques and materials to create a barrier that prevents water intrusion.",
+    "WHY_NEEDED_TITLE": "Why is Waterproofing Necessary?",
+    "WHY_NEEDED_LIST": {
+      "ITEM1": "Structural protection: Water can damage concrete, wood, and metal structures, reducing their durability and compromising the integrity of the building.",
+      "ITEM2": "Health protection: Damp promotes the growth of mold and fungi, which are harmful to human health and can cause allergic and respiratory issues.",
+      "ITEM3": "Cost savings: Initial waterproofing costs are far less than repairing water-related damage."
     },
+    "TYPES_TITLE": "Types of Waterproofing:",
+    "TYPES_LIST": {
+      "ITEM1": "Flexible waterproofing: Uses membranes such as bituminous, EPDM, and PVC, which are elastic and do not crack during movement.",
+      "ITEM2": "Rigid waterproofing: Includes cement-based mixtures applied directly to surfaces to form a hard, waterproof layer.",
+      "ITEM3": "Injection waterproofing: Used to repair existing cracks or leaks by injecting fluid that reacts with water to form a gel or foam."
+    },
+    "WHERE_NEEDED_TITLE": "Where is Waterproofing Needed?",
+    "WHERE_NEEDED_LIST": {
+      "ITEM1": "Bathrooms and Wet Areas",
+      "ITEM2": "Foundations and Basements",
+      "ITEM3": "Balconies and Terraces",
+      "ITEM4": "Roofs",
+      "ITEM5": "Swimming Pools",
+      "ITEM6": "Industrial Buildings"
+    },
+    "CONTACT_NOTE": "Contact us for more information. Our specialists are ready to consult and help you choose the best solutions for your project.",
+    "RECOMMEND_NOTE": "It is always recommended to hire qualified professionals to ensure high-quality and long-lasting waterproofing work."
+  },
+
+   "FLOORING": {
+  "TITLE1": "Self-Leveling Floor Installation",
+  "TITLE2": "What is a Self-Leveling Floor?",
+  "TITLE3": "Why Choose a Self-Leveling Floor?",
+  "DESC1": "Self-leveling floor installation is one of the most popular methods in modern construction and renovation for achieving a perfectly smooth and level surface, which is essential for laying various types of floor coverings (laminate, parquet, tile, linoleum, vinyl flooring). This technology ensures fast and efficient results, saving time and money in the long run.",
+  "DESC2": "A self-leveling floor is a special dry mix that, when mixed with water, forms a liquid solution. This solution spreads evenly over the surface due to its own weight and creates a perfectly flat and smooth layer, filling all irregularities, holes, and cracks. It can be based on cement or gypsum.",
+  "DESC3": "Perfectly level surface: This is its main advantage. Unlike other screeds, it provides a flawless base for any type of flooring. Thickness variety: It is possible to apply both thin (a few millimeters) and thick (several centimeters) layers, depending on the unevenness of the existing surface. Fast drying: Depending on the material type, a self-leveling floor dries relatively quickly, accelerating the renovation process. In some cases, it can be walked on within 1.5–3 hours, and full curing takes about 24 hours. High durability: Once hardened, the floor becomes resistant to mechanical and abrasive effects. Hygiene: It prevents the spread of bacteria and microorganisms and is easy to maintain. Compatibility with underfloor heating: Many types of self-leveling mixtures are compatible with underfloor heating systems.",
+  "DESC4": "Proper installation of a self-leveling floor requires attention to detail and patience. If you lack experience in this field, it is better to contact professionals to ensure a high-quality and long-lasting result."
+},
+
 
       "CARDS": {
     "GRUNTI": "Primer",
@@ -169,7 +200,7 @@
   "CONTACT": {
     "HEADING": "Contact Us",
     "SUBTEXT1": "If you have questions or would like to collaborate with us, write to us and we will definitely reply.",
-    "SUBTEXT2": "Or call us: +995 579 98 98 98",
+    "SUBTEXT2": "Or call us: ",
     "MAIL": "Mail: info@blg-solutions.ge",
     "PLACEHOLDER_NAME": "Enter your name",
     "PLACEHOLDER_EMAIL": "Enter your email",
@@ -178,7 +209,7 @@
   },
 
   "DETAILS":{
-      "urbanX.description": "By order of the construction company Urban X, a modern self-leveling floor system was successfully installed in the plastic surgery center in Tbilisi.\n\n⚙ During the work, high-quality self-leveling material supplied by BLG Solutions was used, which is distinguished by:\n— Smoothness\n— Fast curing\n— Durability and aesthetics\n\n✨ Result: a technically precise and visually elegant floor that fully meets modern standards.\n\n✅ Professionalism is in the details — choose BLG Solutions.",
+      "urbanX.description": "By order of the construction company Urban X, a modern self-leveling floor system was successfully installed in the plastic surgery center in Tbilisi.\n\n⚙ During the work, high-quality self-leveling material supplied by BLG Solutions was used, which is distinguished by:\n Smoothness\n Fast curing\n Durability and aesthetics\n\n✨ Result: a technically precise and visually elegant floor that fully meets modern standards.\n\n✅ Professionalism is in the details — choose BLG Solutions.",
       "tbilisiMariott.description": "🔹 Project completed by – BLG solutions\nAt one of Tbilisi’s most prestigious locations – by order of 'Tbilisi Marriott', restoration of brick plaster and negative-side waterproofing works were carried out.\n\n🔧 Waterproofing performed using special technology ensures:\n✔ Protection of the structure from moisture and damage\n✔ Preservation of the brick structure\n✔ Long-term durability and visual stability\n\n📍 Work was performed with maximum consideration of the architectural specifics of the historical building.\n\n📞 For more information:\n📲 Contact us: 579 98 98 98\n🌐 Visit our website: www.blg-solutions.ge",
       "odaVazisubani.description": "🔹 Project completed by – BLG solutions\nBy order of 'Oda Vazisubani', high-quality waterproofing work was completed on the lower level of the parking area.\n\n🛠 A bitumen-polyurethane super-elastic waterproofing system was used, which ensures:\n✔ Excellent adhesion\n✔ Elasticity\n✔ Long-term protection from moisture and infiltration\n\n📍 The work was carried out quickly, in full compliance with technical standards and considering the project specifics.\n\n💧 Strong protection from moisture — quality you can trust\n🔧 BLG solutions — every detail matters.\n📞 For more information:\n📲 Contact us: 579 98 98 98\n🌐 Visit our website: www.blg-solutions.ge",
       "gasgoVazisubani.description": "🔹 Project completed by – BLG solutions\nAs part of the 'Gasgo Vazisubani' project, bitumen-rubber waterproofing was carried out in the foundation, protecting the structure from moisture and ensuring long-term stability of the base.\n\n💧 The bitumen-rubber system features:\n✔ High elasticity\n✔ Strong adhesion\n✔ Durability in extreme conditions\n\n📍 Work was performed quickly, safely, and in accordance with international standards.\n\n📞 For more information:\n📲 Contact us: 579 98 98 98\n🌐 Visit our website: www.blg-solutions.ge"
