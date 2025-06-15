@@ -13,24 +13,17 @@
   margin-top: 8%;
 }
 
-#Title{
-  margin-left: 25%;
+/* Remove fixed margin-left and center titles */
+#Title,
+#Title2,
+#Title3,
+#Title4 {
+  text-align: center;
+  margin-left: 0;
 }
 
-#Title2{
-  margin-left: 16%;
-}
-
-#Title3{
-  margin-left: 10%;
-}
-
-#Title4{
-  margin-left: 25%;
-}
-
-#hydro-intro{
-  margin-top: 15%;
+#hydro-intro {
+  margin-top: 8%;
 }
 
 .text-wrapper {
@@ -54,6 +47,7 @@
   margin-bottom: 12px;
   color: #333;
   margin-top: 4%;
+  text-align: center;
 }
 
 .description,
@@ -63,6 +57,7 @@
   color: #555;
   margin: 0;
   margin-top: 5%;
+  text-align: justify;
 }
 
 .benefits-list {
@@ -112,4 +107,55 @@
   margin-top: 12px;
   font-size: 1.1rem;
   color: #333;
+}
+
+/* ✅ Responsive Styling */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .description,
+  .additional-description {
+    font-size: 0.95rem;
+  }
+
+  .tables-container {
+    grid-template-columns: 1fr; /* one card per row on small screens */
+    gap: 16px;
+  }
+
+  #hydro-intro {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .text-wrapper {
+    gap: 24px;
+  }
+
+  .text-content {
+    padding: 16px;
+  }
+
+  .table-item img {
+    height: 140px;
+  }
+
+  .table-item h3 {
+    font-size: 1rem;
+  }
 }

@@ -1,3 +1,4 @@
+/* Base styles for the custom-navbar */
 .custom-navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #ccc;
@@ -7,6 +8,7 @@
   position: fixed;
   top: 0;
   z-index: 1000;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 .nav-container {
@@ -16,10 +18,13 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 .navbar-logo {
-  height: 100px;
+  height: 90px; /* Slightly reduced default size for larger screens */
+  max-width: 100%; /* Ensure logo scales down if needed */
+  object-fit: contain; /* Keep aspect ratio */
 }
 
 .menu-toggle {
@@ -27,7 +32,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  display: none;
+  display: none; /* Hidden by default, shown on mobile */
   color: #333;
   z-index: 1001;
 }
@@ -50,6 +55,7 @@
   color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
+  font-size: 16px; /* Explicit default font size for desktop links */
 }
 
 .nav-links a:hover,
@@ -70,17 +76,16 @@
   flex-direction: column;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 999;
-
 }
 
-.service{
+.service {
   cursor: pointer;
 }
 
 .dropdown-menu li {
   padding: 10px 20px;
   white-space: nowrap;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .dropdown-menu li:hover {
@@ -96,29 +101,12 @@
   color: #007bff;
 }
 
-.form-select {
-  padding: 12px 16px;
-  font-size: 18px;
-  height: auto;
-  min-width: 160px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  color: #333;
-  cursor: pointer;
-  width: 10%;
-}
-
-#flag{
-  height: 60px;
-  margin-left: -50%;
-}
-
+/* Language Selector Styles */
 .custom-select-container {
   position: relative;
   cursor: pointer;
   user-select: none;
-   margin-right: 10%;
+  margin-right: 10%; /* Default for larger screens */
 }
 
 .selected-flag {
@@ -136,13 +124,17 @@
   height: 32px;
 }
 
+#select{
+  margin-left: 10%;
+}
+
 .custom-select-dropdown {
   position: absolute;
   top: 100%;
   left: 0;
   background-color: white;
   border: 1px solid #ccc;
-  width: 150px;
+  width: 150px; /* Fixed width, consider making this fluid if it overflows on very small screens */
   border-radius: 5px;
   margin-top: 5px;
   z-index: 1000;
@@ -171,53 +163,121 @@
   margin-left: 10px;
 }
 
-
-
-/* Responsive styles */
+/* Responsive styles for screens up to 768px wide */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: block; /* Show hamburger menu on mobile */
   }
 
   .nav-links {
-    display: none;
+    display: none; /* Hide navigation links by default on mobile */
     position: absolute;
-    top: 80px;
+    top: 80px; /* Position below the header */
     left: 0;
     background-color: #fff;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     flex-direction: column;
     padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
   }
 
   .nav-links.open {
-    display: flex;
-    margin-top: 4%;
+    display: flex; /* Show when menu is open */
+    margin-top: 4%; /* Adjust as needed for spacing */
   }
 
   .nav-links ul {
-    flex-direction: column;
+    flex-direction: column; /* Stack menu items vertically */
     gap: 15px;
+    width: 100%; /* Ensure list takes full width */
   }
 
   .dropdown-menu {
-    position: static;
+    position: static; /* Remove absolute positioning for dropdown on mobile */
     box-shadow: none;
     background: transparent;
     padding-left: 15px;
+    width: auto; /* Allow menu to size naturally */
   }
 
   .navbar-logo {
-    height: 160px;
+    height: 70px; /* Adjusted logo height for general mobile */
+    max-width: 100%;
   }
 
-  a {
-    font-size: 18px;
+  .nav-links a {
+    font-size: 0.95rem; /* Slightly smaller font size for mobile readability */
   }
 
   .facebook i {
-    font-size: 30px;
+    font-size: 22px; /* Slightly smaller icon size */
+  }
+
+  .custom-select-container {
+    margin-right: 0; /* Remove fixed margin */
+    align-self: flex-start;
+    margin-top: 15px;
+    margin-left: -50%;
+  }
+
+  .selected-flag {
+    width: auto; /* Allow flag selector to size naturally */
+    padding: 4px 8px; /* Reduced padding */
+  }
+  .selected-flag img {
+    width: 40px; /* Smaller flag image */
+    height: 27px;
+  }
+  .custom-select-dropdown {
+    width: 130px; /* Slightly reduced width for dropdown on mobile */
+  }
+  .flag-option p {
+    font-size: 13px; /* Slightly smaller text for dropdown options */
+  }
+  .flag-option img {
+    width: 40px; /* Smaller flag image in dropdown */
+    height: 27px;
+  }
+
+  #select{
+    margin-left: 0%;
   }
 }
 
+/* Specific adjustments for very small screens (e.g., iPhone SE, older Androids) */
+@media (max-width: 420px) {
+  .custom-navbar {
+    padding: 8px 10px; /* Further reduce padding for very narrow screens */
+  }
+  .navbar-logo {
+    height: 60px; /* Smaller logo for very small screens */
+  }
+  .menu-toggle {
+    font-size: 24px; /* Slightly smaller toggle icon */
+  }
+  .nav-links {
+    padding: 15px; /* Reduce menu padding */
+  }
+  .nav-links a {
+    font-size: 0.9rem; /* Even smaller font size for navigation links */
+  }
+  .facebook i {
+    font-size: 20px; /* Further reduced icon size */
+  }
+  .selected-flag {
+    padding: 3px 6px; /* Even smaller padding for flag selector */
+    gap: 5px; /* Reduce gap */
+  }
+  .selected-flag img {
+    width: 35px; /* Smaller flag image */
+    height: 24px;
+  }
+  .custom-select-dropdown {
+    width: 120px; /* Even smaller width for dropdown */
+  }
+  .flag-option img {
+    width: 35px; /* Smaller flag image in dropdown */
+    height: 24px;
+  }
+}

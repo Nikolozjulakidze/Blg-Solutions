@@ -5,7 +5,7 @@
 
 .new_top_home_web a {
   font-size: 30px;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .new_top_home_web .text-blk {
@@ -13,7 +13,8 @@
   line-height: 28px;
 }
 
-img .image {
+/* Corrected selector for image within new_top_home_web */
+.new_top_home_web img.image {
   width: 30%;
   height: auto;
   object-fit: cover;
@@ -115,8 +116,8 @@ img .image {
   .new_top_home_web .responsive-container-block.Container {
     flex-direction: column;
     align-items: center;
+    margin-left: -10%;
   }
-
 
   .new_top_home_web .leftSide,
   .new_top_home_web .rightSide {
@@ -126,6 +127,9 @@ img .image {
   .new_top_home_web .text-blk.subHeading,
   .new_top_home_web .text-blk.heading {
     text-align: center;
+    /* Adjust font sizes for mobile readability */
+    font-size: 1.8rem; /* Smaller for mobile */
+    line-height: 1.2;
   }
 
   .new_top_home_web .girl {
@@ -143,6 +147,9 @@ img .image {
   padding: 4rem 2rem;
   background: #f1f3f5;
   text-align: center;
+  /* Ensure it takes full width by default */
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
 }
 
 .service-card {
@@ -160,8 +167,6 @@ img .image {
   justify-content: space-between;
 }
 
-
-
 .service-card img {
   width: 100%;
   height: 200px; /* Increased for better visibility */
@@ -169,9 +174,6 @@ img .image {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-
-
-
 
 .product-section h2 {
   font-size: 2.5rem;
@@ -203,7 +205,7 @@ img .image {
 
 /* Table items */
 .table-item {
-  width: 270px;
+  width: 270px; /* This fixed width might be too wide on very small screens */
   min-height: 480px;
   background-color: #ffffff;
   border-radius: 16px;
@@ -215,8 +217,6 @@ img .image {
   text-align: center;
   transition: transform 0.3s ease;
 }
-
-
 
 .table-item img {
   width: 100%;
@@ -264,6 +264,9 @@ img .image {
   text-align: center;
   max-width: 900px;
   margin: 4rem auto;
+  /* Ensure it takes full width by default and doesn't overflow */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-heading {
@@ -368,6 +371,9 @@ img .image {
   background-color: #f8f9fa;
   padding: 4rem 2rem;
   text-align: center;
+  /* Ensure it takes full width by default */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .references-section .section-title {
@@ -384,7 +390,7 @@ img .image {
 }
 
 .reference-card {
-  width: 800px;
+  width: 800px; /* This fixed width is very large for mobile */
   background-color: #fff;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
@@ -438,13 +444,12 @@ img .image {
 }
 
 
+/* Media Queries for Responsiveness - CORRECTED */
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .hero-banner {
     padding: 4rem 3rem;
   }
-  
   .hero-banner img {
     max-width: 40%;
   }
@@ -456,8 +461,8 @@ img .image {
     align-items: center;
     justify-content: center;
     padding: 3rem 2rem;
-    width: 100% !important;
-    height: 90vh;
+    /* width: 100% !important; - Removed the problematic width */
+    height: auto; /* Changed from fixed vh to auto for better content flow */
   }
 
   .hero-banner img {
@@ -469,308 +474,167 @@ img .image {
   }
 
   .product-section p {
-    font-size: 3.9rem;
+    font-size: 1.1rem; /* Adjusted for mobile readability, was 3.9rem */
   }
 
   .table-item {
-    width: 100%;
+    width: 100%; /* Ensure it takes full width within its container */
     height: auto;
   }
 
-  .reference-item {
-    width: 40% !important;
+  .reference-card { /* Changed from .reference-item to .reference-card as per HTML */
+    width: 100%; /* Changed from 40% to 100% for stacking on small screens */
     height: auto;
+    /* Add padding to prevent content touching edges */
+    padding: 1rem;
+    box-sizing: border-box;
   }
 
-  .reference-item p {
-    font-size: 2.9rem;
+  .reference-card p { /* Changed from .reference-item p to .reference-card p */
+    font-size: 1rem; /* Adjusted for mobile readability, was 2.9rem */
   }
 }
 
 @media (max-width: 800px) {
-
   .hero-banner {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem 2rem;
-    width: 100% !important;
-    height: 100vh;
+    padding: 3rem 1rem; /* Adjusted padding */
+    width: 100%; /* Ensured full width, removed !important and oversized % */
+    height: auto; /* Adjusted to auto */
   }
 
-  .new_top_home_web{
-    width: 210% !important;
+  .new_top_home_web {
+    width: 100%; /* CORRECTED: Removed 210% !important */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    padding: 0 1rem; /* Added horizontal padding for content */
   }
 
- .product-section{
-  margin-left: 0%;
-  width: 210%;
- }
+  .product-section {
+    margin-left: 0%; /* Kept this, as it might be relevant if other rules apply margin */
+    width: 100%; /* CORRECTED: Removed 210% */
+    box-sizing: border-box;
+    padding: 2rem 1rem; /* Adjusted padding */
+  }
 
   .product-section h2 {
     font-size: 1.5rem;
   }
 
   .product-section p {
-    font-size: 2.5rem;
+    font-size: 0.9rem; /* Further reduced for smaller screens */
   }
 
   .references-section {
-   margin-left: 0% !important;
-   width: 210%;
+    margin-left: 0% !important;
+    width: 100%; /* CORRECTED: Removed 210% */
+    box-sizing: border-box;
+    padding: 2rem 1rem; /* Adjusted padding */
   }
 
-  .reference-item {
-    width: 30% !important;
+  .reference-card { /* Using .reference-card as it's the element with width: 800px */
+    width: 100%; /* Set to 100% to stack cards on smaller screens */
+    margin-left: auto; /* Center if needed */
+    margin-right: auto;
+    max-width: 400px; /* Optional: limit width on larger phone screens */
   }
 
-  .reference-item p {
-    font-size: 2rem;
+  .reference-card p {
+    font-size: 0.9rem; /* Further reduced for smaller screens, was 2rem */
   }
 
-  .contact-section{
-  margin-left: 40% !important;
-  width: 210%;
+  .contact-section {
+    /* Removed margin-left: 40% !important; and width: 210%; */
+    margin: 2rem auto; /* Center with auto margins */
+    width: 100%; /* Ensure full width */
+    max-width: 600px; /* Optional: limit max width for better readability */
+    padding: 2rem 1rem; /* Adjusted padding for smaller screens */
+    box-sizing: border-box;
   }
-
 }
 
 @media (max-width: 768px) {
-  .new_top_home_web{
-    width: 210% !important;
+  .new_top_home_web {
+    width: 100%; /* CORRECTED: Removed 210% !important */
   }
 
-  .new_top_home_web[_ngcontent-ng-c273809558] .text-blk.subHeading[_ngcontent-ng-c273809558], .new_top_home_web[_ngcontent-ng-c273809558] .text-blk.heading[_ngcontent-ng-c273809558]
+  /* Note: Angular specific attributes like _ngcontent-ng-c273809558 are dynamically added.
+     Keep your CSS without them in the source file. The rules below will apply without them. */
+  .new_top_home_web .text-blk.subHeading,
+  .new_top_home_web .text-blk.heading {
+    text-align: start; /* Or center if you prefer */
+    margin-top: 10%;
+    /* Re-evaluate font sizes here if needed. Using 1.8rem from the earlier 768px rule. */
+    font-size: 1.5rem; /* Example: make text smaller */
+    line-height: 1.3;
+  }
 
- {
-        text-align: start;
-        margin-top: 10%;
-    }
-
-  .getStarted{
-    margin-left: 40% !important;
+  .getStarted {
+    margin-left: 0 !important; /* Removed 40% margin, align with content */
+    align-self: flex-start; /* If parent is flex and aligned to start */
   }
 
   .text-blk {
-   margin-left: 10% !important;
+    margin-left: 0 !important; /* Removed 10% margin, align with content */
+    padding: 0 1rem; /* Add some padding if needed */
   }
 
   p.text-blk.subHeading {
-   text-align: start;
+    text-align: start;
+    padding: 0 1rem; /* Add padding to subHeading */
   }
 
-  .image{
+  .image {
     margin-top: 10%;
   }
 
+  /* Remove these as they are redundant or incorrect due to scope attributes */
+  /*
+  .new_top_home_web[_ngcontent-ng-c273809558] .text-blk.subHeading[_ngcontent-ng-c273809558], .new_top_home_web[_ngcontent-ng-c273809558] .text-blk.heading[_ngcontent-ng-c273809558]
+  {
+        text-align: start;
+        margin-top: 10%;
+    }
   .new_top_home_web[_ngcontent-ng-c1265949507] .text-blk.subHeading[_ngcontent-ng-c1265949507]{
     margin-top: 10%;
   }
+  */
 }
 
-@media(max-width: 688px) {
-  .contact-section{
-  margin-left: 40% !important;
-  width: 210%;
+/* Consolidated and adjusted smaller breakpoints */
+
+@media (max-width: 688px) {
+  .contact-section {
+    margin-left: auto !important; /* Center it */
+    width: 100%; /* Ensure full width */
+    padding: 2rem 1rem;
   }
-}
-
-@media(max-width: 630px) {
-  .contact-section{
-  margin-left: 30% !important;
-  width: 210%;
+  .product-section, .references-section, .new_top_home_web, .hero-banner {
+    width: 100%;
+    padding: 1.5rem 1rem; /* Reduce padding slightly */
   }
-}
-
-@media(max-width: 530px) {
-  .contact-section{
-  margin-left: 20% !important;
-  width: 210%;
+  .product-section p, .reference-card p {
+    font-size: 0.85rem; /* Slightly smaller text for very small screens */
   }
-
-}
-
-@media(max-width: 472px) {
-  .contact-section{
-  margin-left: 10% !important;
-  width: 210%;
-  }
-
-  .new_top_home_web{
-    width: 210% !important;
-  }
-
-  .getStarted{
-    margin-left: 40% !important;
-  }
-
-  .text-blk {
-    margin-left: 10% !important;
-  }
-
-  .image{
-    margin-top: 10%;
-  }
-
-  .hero-banner{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 2rem;
-    width: 210% !important;
-    height: 90vh;
+  .reference-card {
+    max-width: 350px; /* Adjust max-width for reference cards if desired */
   }
 }
 
-@media(max-width: 449px) {
-
-  .hero-banner {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 2rem;
-    width: 230% !important;
-    height: 100vh;
+@media (max-width: 530px) {
+  .contact-section {
+    margin-left: auto !important; /* Center it */
+    width: 100%;
+    padding: 1.5rem 0.5rem; /* Reduce padding further */
   }
-
-  .new_top_home_web{
-    width: 230% !important;
+  .product-section, .references-section, .new_top_home_web, .hero-banner {
+    width: 100%;
+    padding: 1rem 0.5rem; /* Reduce padding further */
   }
-
-  .getStarted{
-    margin-left: 40% !important;
+  .new_top_home_web .text-blk.subHeading,
+  .new_top_home_web .text-blk.heading {
+    font-size: 1.2rem; /* Make headings smaller on very small phones */
   }
-
-  .text-blk {
-    margin-left: 10% !important;
-  }
-
-  .image{
-    margin-top: 10%;
-  }
-
-  .references-section {
-    margin-left: 0% !important;
-    width: 230%;
-   }
- 
-   .reference-item {
-     width: 30% !important;
-   }
- 
-   .reference-item p {
-     font-size: 2rem;
-   }
- 
-
-  .contact-section{
-  margin-left: 10% !important;
-  width: 210%;
-  }
-
   
- .product-section{
-  margin-left: 0%;
-  width: 230%;
- }
-}
-
-@media(max-width: 430px) {
-  .contact-section{
-  margin-left: 10% !important;
-  width: 210%;
-  }
-
-  .hero-banner{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 2rem;
-    width: 230% !important;
-    height: 80vh;
-  }
-}
-
-@media(max-width: 420px) {
-  .hero-banner {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 2rem;
-    width: 250% !important;
-    height: 100vh;
-  }
-
-  .new_top_home_web{
-    width: 250% !important;
-  }
-
-  .getStarted{
-    margin-left: 40% !important;
-  }
-
-  .text-blk {
-    margin-left: 10% !important;
-  }
-
-  .image{
-    margin-top: 10%;
-  }
-
-  .references-section {
-    margin-left: 0% !important;
-    width: 250%;
-   }
- 
-   .reference-item {
-     width: 30% !important;
-   }
- 
-   .reference-item p {
-     font-size: 2rem;
-   }
- 
-
-  .contact-section{
-  margin-left: 10% !important;
-  width: 250%;
-  }
-
-  
- .product-section{
-  margin-left: 0%;
-  width: 250%;
- }
-}
-
-@media(max-width: 414px) {
-  .contact-section{
-  margin-left: 10% !important;
-  width: 210%;
-  }
-
-  .hero-banner{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 2rem;
-    width: 250% !important;
-    height: 80vh;
-  }
-}
-
-@media(max-width: 390px) {
-  .contact-section{
-  margin-left: 20% !important;
-  width: 210%;
-  }
-
-  .hero-banner{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 2rem;
-    width: 250% !important;
-    height: 80vh;
-  }
 }

@@ -39,10 +39,7 @@
           </a>
         </li>
       </ul>
-    </div>
-
-    <!-- ✅ Language Selector -->
-<div class="custom-select-container" (click)="toggleLangDropdown()" [class.open]="isLangOpen">
+      <div id="select" class="custom-select-container" (click)="toggleLangDropdown()" [class.open]="isLangOpen">
   <div class="selected-flag">
     <img [src]="selectedFlag" alt="Selected Language" />
     <i class="fas fa-chevron-down"></i>
@@ -61,6 +58,12 @@
       <img src="assets/Flags/Russian.png" alt="Russian" />
     </div>
   </div>
+</div>
+    </div>
+
+    <!-- ✅ Language Selector -->
+<div class="custom-select-container" (click)="toggleLangDropdown()" [class.open]="isLangOpen">
+ 
 </div>
 
 
