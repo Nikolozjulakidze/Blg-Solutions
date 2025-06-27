@@ -131,7 +131,12 @@ body {
 @media (max-width: 420px) {
 
   .product-list {
-    margin-left: 80%;
+    margin-left: 0%;
     width: 100%;
+  }
+
+  
+  .features {
+        width: 140%;
   }
 }

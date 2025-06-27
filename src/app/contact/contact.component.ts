@@ -17,8 +17,8 @@ export class ContactComponent {
       const formData = form.value;
   
       emailjs.send(
-        'service_ogxudvm',
-        'template_n9b1zlm',
+        'service_hwoh2at',
+        'template_vnn6ykc',
         {
           name: formData.name,
           email: formData.email,

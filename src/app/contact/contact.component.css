@@ -62,256 +62,143 @@
   }
 
   
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .hero-banner {
-      padding: 4rem 3rem;
-    }
-    
-    .hero-banner img {
-      max-width: 40%;
-    }
+@media (max-width: 800px) {
+  .contact-section {
+    padding: 4rem 2rem;
+    width: 90%;
   }
-  
-  @media (max-width: 992px) {
-    .hero-banner {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem 2rem;
-      width: 100% !important;
-      height: 90vh;
-    }
-  
-    .hero-banner img {
-      margin-top: 2rem;
-    }
-  
-    .product-section h2 {
-      font-size: 1.75rem;
-    }
-  
-    .product-section p {
-      font-size: 3.9rem;
-    }
-  
-    .table-item {
-      width: 100%;
-      height: auto;
-    }
-  
-    .reference-item {
-      width: 40% !important;
-      height: auto;
-    }
-  
-    .reference-item p {
-      font-size: 2.9rem;
-    }
+
+  .contact-heading {
+    font-size: 2.4rem;
+    margin-left: -5%;
   }
-  
-  @media (max-width: 800px) {
-  
-    .hero-banner {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem 2rem;
-      width: 210% !important;
-      height: 100vh;
-      margin-top: 40%;
-    }
-  
-   .product-section{
-    margin-left: 0%;
-    width: 210%;
-   }
-  
-    .product-section h2 {
-      font-size: 1.5rem;
-    }
-  
-    .product-section p {
-      font-size: 2.5rem;
-    }
-  
-    .references-section {
-     margin-left: 0% !important;
-     width: 210%;
-    }
-  
-    .reference-item {
-      width: 30% !important;
-    }
-  
-    .reference-item p {
-      font-size: 2rem;
-    }
-  
-    .contact-section{
-    margin-left: 40% !important;
-    width: 210%;
-    margin-top: 40%;
-    margin-bottom: 30%;
-    }
-  
+
+  .contact-subtext {
+    font-size: 1.1rem;
+    margin-left: -3%;
+    width: 102%;
   }
-  
-  @media(max-width: 688px) {
-    .contact-section{
-    margin-left: 40% !important;
-    width: 210%;
-    }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 12px 28px;
   }
-  
-  @media(max-width: 630px) {
-    .contact-section{
-    margin-left: 30% !important;
-    width: 210%;
-    }
+}
+
+@media (max-width: 688px) {
+  .contact-heading {
+    font-size: 2.2rem;
   }
-  
-  @media(max-width: 530px) {
-    .contact-section{
-    margin-left: 20% !important;
-    width: 210%;
-    }
+
+  .contact-subtext {
+    font-size: 1.05rem;
   }
-  
-  @media(max-width: 472px) {
-    .contact-section{
-    margin-left: 10% !important;
-    width: 210%;
-    }
-  
-    .hero-banner{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 2rem;
-      width: 210% !important;
-      height: 90vh;
-    }
+
+  .submit-btn {
+    font-size: 1rem;
   }
-  
-  @media(max-width: 449px) {
-  
-    .hero-banner {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem 2rem;
-      width: 230% !important;
-      height: 100vh;
-    }
-  
-    .references-section {
-      margin-left: 0% !important;
-      width: 230%;
-     }
-   
-     .reference-item {
-       width: 30% !important;
-     }
-   
-     .reference-item p {
-       font-size: 2rem;
-     }
-   
-  
-    .contact-section{
-    margin-left: 10% !important;
-    width: 210%;
-    }
-  
-    
-   .product-section{
-    margin-left: 0%;
-    width: 230%;
-   }
+}
+
+@media (max-width: 630px) {
+  .contact-section {
+    width: 95%;
   }
-  
-  @media(max-width: 430px) {
-    .contact-section{
-    margin-left: 10% !important;
-    width: 210%;
-    }
-  
-    .hero-banner{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 2rem;
-      width: 230% !important;
-      height: 80vh;
-    }
+
+  .contact-heading {
+    font-size: 2.1rem;
   }
-  
-  @media(max-width: 420px) {
-    .hero-banner {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem 2rem;
-      width: 250% !important;
-      height: 100vh;
-    }
-  
-    .references-section {
-      margin-left: 0% !important;
-      width: 250%;
-     }
-   
-     .reference-item {
-       width: 30% !important;
-     }
-   
-     .reference-item p {
-       font-size: 2rem;
-     }
-   
-  
-    .contact-section{
-    margin-left: 20% !important;
-    width: 250%;
-    }
-  
-    
-   .product-section{
-    margin-left: 0%;
-    width: 250%;
-   }
+
+  .contact-subtext {
+    font-size: 1rem;
   }
-  
-  @media(max-width: 414px) {
-    .contact-section{
-    margin-left: 20% !important;
-    width: 210%;
-    }
-  
-    .hero-banner{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 2rem;
-      width: 250% !important;
-      height: 80vh;
-    }
+}
+
+@media (max-width: 530px) {
+  .contact-section {
+    padding: 3rem 1rem;
+    border-radius: 1rem;
   }
-  
-  @media(max-width: 390px) {
-    .contact-section{
-    margin-left: 20% !important;
-    width: 210%;
-    }
-  
-    .hero-banner{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 2rem;
-      width: 250% !important;
-      height: 80vh;
-    }
+
+  .contact-heading {
+    font-size: 2rem;
   }
+
+  .contact-subtext {
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 472px) {
+  .contact-heading {
+    font-size: 1.9rem;
+  }
+
+  .contact-subtext {
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 449px) {
+  .contact-section {
+    width: 95%;
+    margin-left: 0;
+  }
+
+  .contact-heading {
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
+
+  .contact-subtext {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .contact-heading {
+    font-size: 1.75rem;
+  }
+
+  .contact-subtext {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .contact-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .contact-heading {
+    font-size: 1.7rem;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .contact-heading {
+    font-size: 1.6rem;
+  }
+
+  .contact-subtext {
+    font-size: 0.85rem;
+  }
+
+  .submit-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

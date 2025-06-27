@@ -184,7 +184,6 @@
 
   .nav-links.open {
     display: flex; /* Show when menu is open */
-    margin-top: 4%; /* Adjust as needed for spacing */
   }
 
   .nav-links ul {
