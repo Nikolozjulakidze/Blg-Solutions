@@ -2,7 +2,7 @@
 .custom-navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #ccc;
-  padding: 10px 20px;
+  padding: 30px 20px;
   font-family: sans-serif;
   width: 100%;
   position: fixed;
@@ -11,14 +11,28 @@
   box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
+/* Container with centered nav-links and absolute logo */
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;   /* Center nav-links horizontally */
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  box-sizing: border-box;
+  gap: 40px;                 /* Space between nav-links and language selector */
+  position: relative;        /* Needed for absolute positioning of logo */
+}
+
+/* Logo fixed to the left */
+#name {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
 }
 
 .navbar-logo {
@@ -37,11 +51,16 @@
   z-index: 1001;
 }
 
+/* Nav links + language selector container */
 .nav-links {
   display: flex;
   align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-grow: 1;
 }
 
+/* Nav links list */
 .nav-links ul {
   display: flex;
   gap: 20px;
@@ -55,7 +74,7 @@
   color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
-  font-size: 16px; /* Explicit default font size for desktop links */
+  font-size: 16px;
 }
 
 .nav-links a:hover,
@@ -106,7 +125,11 @@
   position: relative;
   cursor: pointer;
   user-select: none;
-  margin-right: 10%; /* Default for larger screens */
+  margin-right: 0; /* Removed margin-right to allow center alignment */
+}
+
+#select {
+  margin-left: 0; /* Removed margin-left */
 }
 
 .selected-flag {
@@ -124,17 +147,13 @@
   height: 32px;
 }
 
-#select{
-  margin-left: 10%;
-}
-
 .custom-select-dropdown {
   position: absolute;
   top: 100%;
   left: 0;
   background-color: white;
   border: 1px solid #ccc;
-  width: 150px; /* Fixed width, consider making this fluid if it overflows on very small screens */
+  width: 150px;
   border-radius: 5px;
   margin-top: 5px;
   z-index: 1000;
@@ -167,6 +186,7 @@
 @media (max-width: 768px) {
   .menu-toggle {
     display: block; /* Show hamburger menu on mobile */
+    margin-left: 90%;
   }
 
   .nav-links {
@@ -239,7 +259,7 @@
     height: 27px;
   }
 
-  #select{
+  #select {
     margin-left: 0%;
   }
 }
@@ -247,7 +267,7 @@
 /* Specific adjustments for very small screens (e.g., iPhone SE, older Androids) */
 @media (max-width: 420px) {
   .custom-navbar {
-    padding: 8px 10px; /* Further reduce padding for very narrow screens */
+    padding: 30px 10px; /* Further reduce padding for very narrow screens */
   }
   .navbar-logo {
     height: 60px; /* Smaller logo for very small screens */

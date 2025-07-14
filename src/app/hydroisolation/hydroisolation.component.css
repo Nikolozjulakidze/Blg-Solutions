@@ -130,7 +130,7 @@
   }
 
   #hydro-intro {
-    margin-top: 5%;
+    margin-top: 20%;
   }
 }
 
@@ -157,5 +157,16 @@
 
   .table-item h3 {
     font-size: 1rem;
+  }
+
+  .description{
+     font-size: .9rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .description{
+     font-size: .8rem;
   }
 }

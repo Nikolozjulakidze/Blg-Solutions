@@ -59,4 +59,8 @@
   .image-gallery img {
     width: 100%;
   }
+
+  .details-container{
+    margin-top: 30%;
+  }
 }

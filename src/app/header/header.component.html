@@ -9,7 +9,7 @@
     <div class="nav-links" [class.open]="isMenuOpen">
       <ul>
         <li>
-          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">
             {{ 'NAV.HOME' | translate }}
           </a>
         </li>
@@ -19,55 +19,59 @@
           </a>
           <ul class="dropdown-menu" *ngIf="isDropdownOpen">
             <li>
-              <a routerLink="/hydroisolation" (click)="closeDropdown()">
+              <a routerLink="/hydroisolation" (click)="closeDropdown(); closeMenu()">
                 {{ 'NAV.SERVICE1' | translate }}
               </a>
             </li>
             <li>
-              <a routerLink="/self-floor" (click)="closeDropdown()">
+              <a routerLink="/self-floor" (click)="closeDropdown(); closeMenu()">
                 {{ 'NAV.SERVICE2' | translate }}
               </a>
             </li>
           </ul>
         </li>
-        <li><a routerLink="/masalebi" routerLinkActive="active">{{ 'NAV.MATERIALS' | translate }}</a></li>
-        <li><a href="#references">{{ 'NAV.PROJECTS' | translate }}</a></li>
-        <li><a routerLink="/contact" routerLinkActive="active">{{ 'NAV.CONTACT' | translate }}</a></li>
         <li>
-          <a class="facebook" href="https://www.facebook.com/profile.php?id=61564430607790&locale=ka_GE" target="_blank">
+          <a routerLink="/masalebi" routerLinkActive="active" (click)="closeMenu()">
+            {{ 'NAV.MATERIALS' | translate }}
+          </a>
+        </li>
+        <li>
+          <a href="#references" (click)="closeMenu()">
+            {{ 'NAV.PROJECTS' | translate }}
+          </a>
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">
+            {{ 'NAV.CONTACT' | translate }}
+          </a>
+        </li>
+        <li>
+          <a class="facebook" href="https://www.facebook.com/profile.php?id=61564430607790&locale=ka_GE" target="_blank" (click)="closeMenu()">
             <i class="fab fa-facebook"></i>
           </a>
         </li>
       </ul>
+
       <div id="select" class="custom-select-container" (click)="toggleLangDropdown()" [class.open]="isLangOpen">
-  <div class="selected-flag">
-    <img [src]="selectedFlag" alt="Selected Language" />
-    <i class="fas fa-chevron-down"></i>
-  </div>
-  <div class="custom-select-dropdown" *ngIf="isLangOpen">
-    <div class="flag-option" (click)="ChangeLang('geo'); selectFlag('geo')">
-      <p>ქართული</p>
-      <img src="assets/Flags/Georgia.jpg" alt="Georgian" />
+        <div class="selected-flag">
+          <img [src]="selectedFlag" alt="Selected Language" />
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="custom-select-dropdown" *ngIf="isLangOpen">
+          <div class="flag-option" (click)="ChangeLang('geo'); selectFlag('geo'); closeMenu()">
+            <p>ქართული</p>
+            <img src="assets/Flags/Georgia.jpg" alt="Georgian" />
+          </div>
+          <div class="flag-option" (click)="ChangeLang('eng'); selectFlag('eng'); closeMenu()">
+            <p>English</p>
+            <img src="assets/Flags/English.png" alt="English" />
+          </div>
+          <div class="flag-option" (click)="ChangeLang('rus'); selectFlag('rus'); closeMenu()">
+            <p>Russian</p>
+            <img src="assets/Flags/Russian.png" alt="Russian" />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flag-option" (click)="ChangeLang('eng'); selectFlag('eng')">
-      <p>English</p>
-      <img src="assets/Flags/English.png" alt="English" />
-    </div>
-    <div class="flag-option" (click)="ChangeLang('rus'); selectFlag('rus')">
-      <p>Russian</p>
-      <img src="assets/Flags/Russian.png" alt="Russian" />
-    </div>
-  </div>
-</div>
-    </div>
-
-    <!-- ✅ Language Selector -->
-<div class="custom-select-container" (click)="toggleLangDropdown()" [class.open]="isLangOpen">
- 
-</div>
-
-
-
-
   </div>
 </nav>
