@@ -71,6 +71,16 @@ export class DetailsComponent {
       ],
       text: 'DETAILS.chavchavadze.description'
     },
+
+      {
+      title: 'bina-paliashvili',
+      images: [
+        '../../assets/Projects/paliashvili 1.jpg',
+        '../../assets/Projects/paliashvili 2.jpg',
+        '../../assets/Projects/paliashvili 3.jpg',
+      ],
+      text: 'DETAILS.chavchavadze.description'
+    },
   ];
 
   constructor(private route: ActivatedRoute) {
